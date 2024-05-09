@@ -27,6 +27,11 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('../pages/simple-questions/SimpleQuestions.vue'),
       },
       {
+        name: 'exam',
+        path: 'exam',
+        component: () => import('../pages/exam/ExamPage.vue'),
+      },
+      {
         name: 'preferences',
         path: 'preferences',
         component: () => import('../pages/preferences/Preferences.vue'),

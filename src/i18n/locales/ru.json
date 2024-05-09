@@ -1,91 +1,80 @@
 {
   "auth": {
-    "agree": "I agree to",
-    "createAccount": "Create account",
-    "createNewAccount": "Create New Account",
-    "email": "Email",
-    "login": "Login",
-    "password": "Password",
-    "recover_password": "Recover password",
-    "sign_up": "Sign Up",
-    "keep_logged_in": "Keep me logged in",
-    "termsOfUse": "Terms of Use.",
-    "reset_password": "Reset password"
+    "agree": "Я согласен",
+    "createAccount": "Создать аккаунт",
+    "createNewAccount": "Создать новый аккаунт",
+    "email": "Почта",
+    "login": "Логин",
+    "password": "Пароль",
+    "recover_password": "Восстановить пароль",
+    "sign_up": "Зарегестрироваться",
+    "keep_logged_in": "Запомнить меня",
+    "termsOfUse": "Пользовательское соглашение.",
+    "reset_password": "Сбросить пароль"
   },
   "404": {
-    "title": "This page’s gone fishing.",
-    "text": "If you feel that it’s not right, please send us a message at ",
-    "back_button": "Back to dashboard"
+    "title": "Страницы не существует.",
+    "text": "Если вам кажется что что-то не так, напишите в поддержку. ",
+    "back_button": "Вернуться"
   },
   "typography": {
     "primary": "Primary text styles",
     "secondary": "Secondary text styles"
   },
-  "dashboard": {
-    "versions": "Versions",
-    "setupRemoteConnections": "Setup Remote Connections",
-    "currentVisitors": "Current Visitors",
-    "navigationLayout": "navigation layout",
-    "topBarButton": "Top Bar",
-    "sideBarButton": "Side Bar"
-  },
   "language": {
-    "brazilian_portuguese": "Português",
-    "english": "English",
-    "spanish": "Spanish",
-    "simplified_chinese": "Simplified Chinese",
-    "persian": "Persian"
+    "english": "Английский",
+    "russian": "Русский"
   },
   "menu": {
-    "auth": "Auth",
-    "buttons": "Buttons",
-    "timelines": "Timelines",
+    "auth": "Авторизация",
+    "buttons": "Кнопки",
+    "timelines": "Временные промежутки",
     "dashboard": "Dashboard",
-    "billing": "Billing",
-    "login": "Login",
-    "preferences": "Account preferences",
-    "payments": "Payments",
-    "settings": "Application settings",
-    "pricing-plans": "Pricing plans",
-    "payment-methods": "Payment methods",
-    "signup": "Signup",
-    "simple-questions": "Questions",
-    "exam": "Exam",
-    "recover-password": "Recover password",
+    "billing": "Оплата",
+    "login": "Логин",
+    "preferences": "Настройки аккаунта",
+    "payments": "Платежи",
+    "settings": "Настройки приложения",
+    "pricing-plans": "Тарифы",
+    "payment-methods": "Способы оплаты",
+    "signup": "Зарегестрироваться",
+    "simple-questions": "Список вопросов",
+    "exam": "Экзамен",
+    "recover-password": "Восстановить пароль",
     "recover-password-email": "Recover password email",
     "404": "404",
     "faq": "FAQ",
-    "users": "Users",
-    "projects": "Projects"
+    "users": "Пользователи",
+    "projects": "Проекты"
   },
   "messages": {
-    "all": "See all messages",
-    "new": "New messages from {name}",
-    "mark_as_read": "Mark As Read"
+    "all": "Все сообщения",
+    "new": "Новое сообщение (от) ",
+    "mark_as_read": "Пометить прочитанным"
   },
   "navbar": {
     "messageUs": "Web development inquiries:",
     "repository": "GitHub Repo"
   },
   "notifications": {
-    "all": "See all notifications",
-    "less": "See less notifications",
-    "mark_as_read": "Mark as read",
-    "sentMessage": "sent you a message",
-    "uploadedZip": "uploaded a new Zip file with {type}",
-    "startedTopic": "started a new topic"
+    "all": "Включить все уведомления",
+    "less": "Выключить уведомления",
+    "mark_as_read": "Пометить прочитанным",
+    "sentMessage": "отправил сообщение",
+    "uploadedZip": "загружен новый архив с {type}",
+    "startedTopic": "начато новое обсуждение"
   },
   "user": {
-    "language": "Change language",
-    "logout": "Logout",
-    "profile": "Profile",
-    "settings": "Settings",
-    "billing": "Billing",
+    "language": "Изменить язык",
+    "logout": "Выйти",
+    "profile": "Профиль",
+    "settings": "Настройки",
+    "billing": "Оплата",
     "faq": "FAQ",
-    "helpAndSupport": "Help & support",
-    "projects": "Projects",
-    "account": "Account",
-    "explore": "Explore"
+    "helpAndSupport": "Поддержка",
+    "projects": "Проекты",
+    "account": "Аккаунт",
+    "explore": "Найти"
   },
   "treeView": {
     "basic": "Basic",
@@ -131,9 +120,9 @@
       "readMore": "Show More"
     },
     "link": {
-      "edit": "Edit",
-      "setAsDefault": "Set as default",
-      "delete": "Delete",
+      "edit": "Изменить",
+      "setAsDefault": "По умолчанию",
+      "delete": "Удалить",
       "traveling": "Traveling",
       "france": "France",
       "review": "Review",
@@ -167,13 +156,13 @@
     "hidden": "Tabs with hidden slider",
     "grow": "Tabs grow"
   },
-  "helpAndSupport": "Help & support",
-  "aboutVuesticAdmin": "About Vuestic Admin",
+  "helpAndSupport": "Поддержка",
+  "aboutVuesticAdmin": "О нас",
   "search": {
-    "placeholder": "Search..."
+    "placeholder": "Поиск..."
   },
   "buttonSelect": {
-    "dark": "Dark",
-    "light": "Light"
+    "dark": "Темная",
+    "light": "Светлая"
   }
 }

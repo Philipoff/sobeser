@@ -69,6 +69,13 @@ export default {
       },
     },
     {
+      name: 'exam',
+      displayName: 'menu.exam',
+      meta: {
+        icon: 'vuestic-iconset-files',
+      },
+    },
+    {
       name: 'preferences',
       displayName: 'menu.preferences',
       meta: {
