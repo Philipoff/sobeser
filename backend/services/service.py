@@ -2,6 +2,7 @@ from fastapi import APIRouter, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.services.routes.authorisation import auth_router
+from backend.services.routes.answer_processing import QA_router
 from backend.database.database import DatabaseService
 
 
@@ -30,4 +31,5 @@ class APIService:
         api_router.prefix = "/api"
 
         api_router.include_router(router=auth_router, prefix="/auth", tags=["Auth"])
+        api_router.include_router(router=QA_router, prefix="/answer_processing", tags=["answer_processing"])
         self.app.include_router(router=api_router)

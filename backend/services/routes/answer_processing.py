@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from backend.services.utils.gemini import gemini_search
-from backend.services.schemas.gemini import QAModel
+from backend.services.schemas.answer_processing import QAModel
 
 QA_router = APIRouter(
     tags=["QA"],
@@ -8,7 +8,7 @@ QA_router = APIRouter(
 )
 
 
-@QA_router.post("/api/check_answer")
+@QA_router.post("/check_answer")
 async def check_answer(form: QAModel):
     gemini_answer = gemini_search(form.question, form.answer)
     return gemini_answer
