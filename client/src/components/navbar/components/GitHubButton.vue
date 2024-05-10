@@ -1,10 +1,5 @@
 <template>
-  <VaButton
-    preset="secondary"
-    color="textPrimary"
-    target="_blank"
-    aria-label="Visit github"
-  >
+  <VaButton preset="secondary" color="textPrimary" target="_blank" aria-label="Visit github">
     <VaIcon :component="VaIconGitHub" />
   </VaButton>
 </template>

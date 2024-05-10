@@ -2,7 +2,153 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab9f1124-6f23-41b8-b781-3e7271d8242f" name="Changes" comment="RU locale">
-      <change afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/database/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/jwt_processing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/routes/answer_processing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/routes/authorisation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/schemas/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/schemas/gemini.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/services/utils/gemini.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sobeser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sobeser.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.github/COMMIT_CONVENTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/.github/COMMIT_CONVENTION.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.github/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.storybook/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/.storybook/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.storybook/storybook-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/.storybook/storybook-main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.vscode/extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/.vscode/extensions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/docs/pre-production.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/docs/pre-production.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/NotFoundImage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NotFoundImage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SobeserLogo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SobeserLogo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconCleanCode.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconCleanCode.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconColor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconColor.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconFaster.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconFaster.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconFree.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconFree.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconFresh.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconFresh.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconGitHub.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconGitHub.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconHideSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconHideSidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconMenuCollapsed.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconMenuCollapsed.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconMessage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconMessage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconNotification.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconNotification.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconResponsive.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconResponsive.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconRich.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconRich.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconSlower.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconSlower.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/icons/VaIconVue.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/icons/VaIconVue.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/navbar/components/GitHubButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navbar/components/GitHubButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/navbar/components/dropdowns/NotificationDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navbar/components/dropdowns/NotificationDropdown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/navbar/components/dropdowns/ProfileDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navbar/components/dropdowns/ProfileDropdown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/sidebar/AppSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/sidebar/AppSidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/typography/Typography.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/typography/Typography.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/typography/Typography.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/typography/Typography.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-charts/VaChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-charts/VaChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/BarChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/BarChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/BubbleChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/BubbleChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/DoughnutChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/DoughnutChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/HorizontalBarChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/HorizontalBarChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/LineChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/LineChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/Map.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/Map.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/PieChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-charts/chart-types/PieChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-charts/external-tooltip.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-charts/external-tooltip.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-charts/vaChartConfigs.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-charts/vaChartConfigs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-medium-editor/VaMediumEditor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-medium-editor/VaMediumEditor.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-medium-editor/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-medium-editor/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/va-timeline-item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/va-timeline-item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/data/CountriesList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/data/CountriesList.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/data/geo.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/data/geo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/data/pages/python-simple-questions.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/data/pages/python-simple-questions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/data/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/data/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/data/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/i18n/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/i18n/locales/gb.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/locales/gb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/i18n/locales/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/locales/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/AppLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/layouts/AppLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/RouterBypass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/layouts/RouterBypass.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/CheckTheEmail.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/RecoverPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/RecoverPassword.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/billing/BillingPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/billing/BillingPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/billing/Invoices.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/billing/Invoices.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/billing/MembeshipTier.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/billing/MembeshipTier.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/billing/PaymentInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/billing/PaymentInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/billing/modals/ChangeYourPaymentPlan.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/billing/modals/ChangeYourPaymentPlan.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/exam/ExamPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/exam/ExamPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/FaqPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/FaqPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/data/navigationLinks.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/data/navigationLinks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/data/popularCategories.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/data/popularCategories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/widgets/Categories.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/widgets/Categories.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/widgets/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/widgets/Navigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/widgets/Questions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/widgets/Questions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/widgets/RequestDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/widgets/RequestDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/PaymentsPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/PaymentsPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/payment-system/PaymentSystem.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/payment-system/PaymentSystem.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/payment-system/PaymentSystem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/payment-system/PaymentSystem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressCreateModal.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressCreateModal.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressCreateModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressCreateModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressEdit.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressEdit.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressList.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressList.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressListItem.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressListItem.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressUpdateModal.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressUpdateModal.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressUpdateModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressUpdateModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardCreateModal.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardCreateModal.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardCreateModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardCreateModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardEdit.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardEdit.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardList.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardList.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardListItem.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardListItem.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardUpdateModal.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardUpdateModal.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardUpdateModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardUpdateModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/Preferences.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/Preferences.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/modals/EditNameModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/modals/EditNameModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/modals/ResetPasswordModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/modals/ResetPasswordModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/preferences-header/PreferencesHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/preferences-header/PreferencesHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/settings/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/settings/Settings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/pricing-plans/PricingPlans.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/pricing-plans/PricingPlans.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/pricing-plans/options.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/pricing-plans/options.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/pricing-plans/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/pricing-plans/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/settings/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/settings/Settings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/settings/notifications/Notifications.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/settings/notifications/Notifications.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/settings/theme-switcher/ThemeSwitcher.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/settings/theme-switcher/ThemeSwitcher.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/simple-questions/SimpleQuestions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/simple-questions/SimpleQuestions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/scss/icon-fonts/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/scss/icon-fonts/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/scss/icon-fonts/vuestic-icons/vuestic-icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/scss/icon-fonts/vuestic-icons/vuestic-icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/scss/vuestic-sass/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/scss/vuestic-sass/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/toCSV.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/toCSV.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/vuestic-ui/global-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/vuestic-ui/global-config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/vuestic-ui/icons-config/aliases.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/vuestic-ui/icons-config/aliases.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/vuestic-ui/themes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/vuestic-ui/themes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/billing-addresses.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/billing-addresses.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/global-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/global-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/notifications.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/notifications.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/payment-cards.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/payment-cards.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/user-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/user-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +179,90 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/sobeser",
+    "last_opened_file_path": "C:/sobeser/venv/Scripts/activate_this.py",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "ts.external.directory.path": "C:\\sobeser\\client\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\sobeser\backend\services\utils" />
+      <recent name="C:\sobeser\backend\services" />
       <recent name="C:\sobeser\client" />
       <recent name="C:\sobeser\public" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="activate_this" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="sobeser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/Scripts" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Scripts/activate_this.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="answer_processing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sobeser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/services/routes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/services/routes/answer_processing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="jwt_processing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sobeser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/services/jwt_processing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sobeser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,20 +295,31 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev" />
+        <script value="lint" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.dev (1)" />
+      <item itemvalue="npm.lint" />
+      <item itemvalue="Python.activate_this" />
+      <item itemvalue="Python.answer_processing" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.jwt_processing" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.answer_processing" />
+        <item itemvalue="Python.jwt_processing" />
         <item itemvalue="npm.dev (1)" />
-        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
   </component>
@@ -108,6 +334,11 @@
       <workItem from="1715202927783" duration="5258000" />
       <workItem from="1715244177507" duration="3254000" />
       <workItem from="1715248736939" duration="1114000" />
+      <workItem from="1715284191593" duration="3857000" />
+      <workItem from="1715330553822" duration="95000" />
+      <workItem from="1715330806740" duration="780000" />
+      <workItem from="1715350420632" duration="9665000" />
+      <workItem from="1715368024927" duration="7721000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1715203608830</created>
@@ -159,5 +390,11 @@
     <MESSAGE value="LOGOS" />
     <MESSAGE value="RU locale" />
     <option name="LAST_COMMIT_MESSAGE" value="RU locale" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sobeser$activate.coverage" NAME="activate_this Coverage Results" MODIFIED="1715370264486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Scripts" />
+    <SUITE FILE_PATH="coverage/sobeser$answer_processing.coverage" NAME="answer_processing Coverage Results" MODIFIED="1715371675344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/services/routes" />
+    <SUITE FILE_PATH="coverage/sobeser$main.coverage" NAME="main Coverage Results" MODIFIED="1715378387089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/sobeser$jwt_processing.coverage" NAME="jwt_processing Coverage Results" MODIFIED="1715370486654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/services" />
   </component>
 </project>

@@ -1,8 +1,8 @@
 <template>
-  <h1 class="page-title">Choose your plan</h1>
+  <h1 class="page-title">{{ t("billing.choose_your_plan") }}</h1>
   <div class="py-4 text-lg leading-[26px]">
-    If you need more info about our pricing, please check
-    <span class="text-primary underline">Pricing Guidelines</span>.
+    {{ t("billing.more_info") }}
+    <span class="text-primary underline">{{ t("billing.pricing_guidelines") }}</span>.
   </div>
   <div class="flex flex-col p-4 bg-backgroundSecondary">
     <div class="flex justify-center">
@@ -11,8 +11,8 @@
         color="background-element"
         border-color="background-element"
         :options="[
-          { label: 'Monthly', value: 'Monthly' },
-          { label: 'Annual', value: 'Annual' },
+          { label: t('billing.monthly'), value: 'Monthly' },
+          { label: t('billing.annual'), value: 'Annual' },
         ]"
       />
     </div>
@@ -30,18 +30,18 @@
         <div :class="{ '!space-y-10': plan.model === 'Advanced' }" class="space-y-8 md:space-y-10">
           <div class="space-y-4 text-center">
             <h2 class="pricing-plan-card-title">
-              {{ plan.title }}
+              {{ t('billing.' + plan.title) }}
             </h2>
             <VaBadge v-for="badge in plan.badges" :key="badge" :style="badgeStyles" :text="badge" color="primary" />
             <p class="text-lg leading-[26px] text-secondary">
-              {{ plan.description }}
+              {{ t('billing.desc_' + plan.description) }}
             </p>
             <div class="flex space-x-1 justify-center items-baseline text-lg leading-[26px]">
-              <span>$</span
+              <span>{{ t('billing.value') }}</span
               ><span class="text-[32px] md:text-5xl leading-[110%] md:leading-[56px] font-bold">{{
-                selectedDuration === 'Annual' ? plan.price : plan.priceMonth
+                selectedDuration === 'Annual' ? t('billing.' + plan.price) : t('billing.' + plan.priceMonth)
               }}</span
-              ><span>/ {{ selectedDuration === 'Annual' ? 'year' : 'mo' }}</span>
+              ><span>/ {{ selectedDuration === 'Annual' ? t('billing.year') : t('billing.month') }}</span>
             </div>
           </div>
           <div class="space-y-6">
@@ -51,7 +51,8 @@
               class="flex justify-between items-center text-lg leading-[26px]"
             >
               <p :class="{ 'text-secondary': !feature.isAvailable }">
-                {{ feature.description }}
+
+                {{ t('billing.' + feature.description) }}
               </p>
               <VaIcon v-if="feature.isAvailable" color="primary" name="mso-check" size="20px" />
               <VaIcon v-else color="backgroundBorder" name="mso-block" size="20px" />
@@ -78,9 +79,12 @@ import { useToast, useModal } from 'vuestic-ui'
 import { badgeStyles, selectButtonStyles } from './styles'
 
 import { pricingPlans } from './options'
+import {useI18n} from "vue-i18n";
 
 const { init } = useToast()
 const { init: initModal } = useModal()
+
+const { t } = useI18n()
 
 const selectedDuration = ref<string>('Annual')
 const selectedPlan = ref<string>()

@@ -85,16 +85,11 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('../pages/auth/RecoverPassword.vue'),
       },
       {
-        name: 'recover-password-email',
-        path: 'recover-password-email',
-        component: () => import('../pages/auth/CheckTheEmail.vue'),
-      },
-      {
         path: '',
         redirect: { name: 'login' },
       },
     ],
-  }
+  },
 ]
 
 const router = createRouter({

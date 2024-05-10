@@ -39,8 +39,10 @@
 <script lang="ts" setup>
 import { useToast } from 'vuestic-ui'
 import { reactive } from 'vue'
+import {useI18n} from "vue-i18n";
 
 const { init } = useToast()
+const { t } = useI18n()
 
 type MembershipTier = {
   id: string

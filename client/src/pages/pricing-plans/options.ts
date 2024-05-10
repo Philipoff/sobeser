@@ -3,8 +3,8 @@ export type PricingPlans = {
   model: string
   badges?: string[]
   description: string
-  price: number
-  priceMonth: number
+  price: string
+  priceMonth: string
   features: Feature[]
 }
 
@@ -14,39 +14,38 @@ type Feature = {
 }
 
 const features = [
-  'Up to 10 Active Users',
-  'Up to 30 Project Integrations',
-  'Analytics Module',
-  'Finance Module',
-  'Accounting Module',
-  'Network Platform',
-  'Unlimited Cloud Spase',
+  "feature_1",
+  "feature_2",
+  "feature_3",
+  "feature_4",
+  "feature_5",
+  "feature_6",
+  "feature_7",
 ]
 
 export const pricingPlans: PricingPlans[] = [
   {
     title: 'Startup',
     model: 'Startup',
-    description: 'Optimal for 10+ team size and new startup',
-    price: 39,
-    priceMonth: 5,
+    description: 'startup',
+    price: "price_year_startup",
+    priceMonth: "price_month_startup",
     features: features.map((d, i) => ({ description: d, isAvailable: i < 3 })),
   },
   {
     title: 'Advanced',
     model: 'Advanced',
-    description: 'Optimal for 100+ team size and grown company',
-    price: 339,
-    priceMonth: 35,
+    description: 'advanced',
+    price: "price_year_advanced",
+    priceMonth: "price_month_advanced",
     features: features.map((d, i) => ({ description: d, isAvailable: i < 5 })),
-    badges: ['Popular choice'],
   },
   {
     title: 'Enterprise',
     model: 'Enterprise',
-    description: 'Optimal for 1000+ team and enterpise',
-    price: 999,
-    priceMonth: 100,
+    description: 'enterprise',
+    price: "price_year_enterprise",
+    priceMonth: "price_month_enterprise",
     features: features.map((d) => ({ description: d, isAvailable: true })),
   },
 ]
