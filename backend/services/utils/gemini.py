@@ -26,5 +26,5 @@ def gemini_search(question, answer, temperature=0.1):
     }
     r = requests.post(url, json=request_body, proxies=proxies)
     if r.status_code == 200:
-        return r.json().get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text")
+        return r.json().get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text").replace("\n", '<br>')
     return False

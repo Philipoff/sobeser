@@ -30,11 +30,8 @@
     "sideBarButton": "Side Bar"
   },
   "language": {
-    "brazilian_portuguese": "Português",
     "english": "English",
-    "spanish": "Spanish",
-    "simplified_chinese": "Simplified Chinese",
-    "persian": "Persian"
+    "russian": "Русский"
   },
   "menu": {
     "auth": "Auth",
@@ -204,5 +201,11 @@
   "buttonSelect": {
     "dark": "Dark",
     "light": "Light"
+  },
+  "settings": {
+    "settings": "Settings",
+    "theme": "Theme",
+    "preferences": "General preferences",
+    "Language": "Language",
   }
 }

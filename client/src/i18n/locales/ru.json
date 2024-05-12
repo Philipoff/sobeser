@@ -193,5 +193,11 @@
   "buttonSelect": {
     "dark": "Темная",
     "light": "Светлая"
+  },
+  "settings": {
+    "settings": "Настройки",
+    "theme": "Тема",
+    "preferences": "Настройки",
+    "Language": "Язык"
   }
 }
