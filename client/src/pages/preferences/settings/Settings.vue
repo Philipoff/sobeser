@@ -1,18 +1,18 @@
 <template>
   <div class="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-6 min-h-[36px] leading-5">
-    <p class="font-bold w-[200px]">Name</p>
+    <p class="font-bold w-[200px]">{{ t('preferences.Name') }}</p>
     <div class="flex-1">
       <div class="max-w-[748px]">
         {{ store.userName }}
       </div>
     </div>
     <VaButton :style="buttonStyles" class="w-fit h-fit" preset="primary" @click="emits('openNameModal')">
-      Edit
+      {{ t('preferences.Edit') }}
     </VaButton>
   </div>
   <VaDivider />
   <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 min-h-[36px] leading-5">
-    <p class="font-bold w-[200px]">Email</p>
+    <p class="font-bold w-[200px]">{{ t('preferences.Email') }}</p>
     <div class="flex-1">
       <div class="max-w-[748px]">
         {{ store.email }}
@@ -20,34 +20,22 @@
     </div>
   </div>
   <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 min-h-[36px] leading-5">
-    <p class="font-bold w-[200px]">Password</p>
+    <p class="font-bold w-[200px]">{{ t('preferences.Password') }}</p>
     <div class="flex-1">
       <div class="max-w-[748px]">•••••••••••••</div>
     </div>
     <VaButton :style="buttonStyles" class="w-fit h-fit" preset="primary" @click="emits('openResetPasswordModal')">
-      Reset Password
+      {{ t('preferences.reset_password') }}
     </VaButton>
   </div>
   <VaDivider />
   <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 min-h-[36px] leading-5">
-    <p class="font-bold w-[200px]">Two-factor authentication</p>
+    <p class="font-bold w-[200px]">{{ t('preferences.email_sub') }}</p>
     <div class="flex-1">
       <div class="max-w-[748px]">
-        {{ twoFA.content }}
-      </div>
-    </div>
-    <VaButton :style="buttonStyles" class="w-fit h-fit" preset="primary" :color="twoFA.color" @click="toggle2FA">
-      {{ twoFA.button }}
-    </VaButton>
-  </div>
-  <VaDivider />
-  <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 min-h-[36px] leading-5">
-    <p class="font-bold w-[200px]">Email subscriptions</p>
-    <div class="flex-1">
-      <div class="max-w-[748px]">
-        <p>To manage what emails you get, visit the</p>
+        <p>{{ t('preferences.manage') }}</p>
         <div class="flex space-x-1 w-fit">
-          <RouterLink :to="{ name: 'settings' }" class="font-semibold text-primary">Notification settings</RouterLink>
+          <RouterLink :to="{ name: 'settings' }" class="font-semibold text-primary">{{ t('preferences.manage_button') }}</RouterLink>
         </div>
       </div>
     </div>
@@ -61,6 +49,7 @@ import { useToast } from 'vuestic-ui/web-components'
 import { useUserStore } from '../../../stores/user-store'
 
 import { buttonStyles } from '../styles'
+import {useI18n} from "vue-i18n";
 
 const store = useUserStore()
 
@@ -92,4 +81,6 @@ const toggle2FA = () => {
 }
 
 const emits = defineEmits(['openNameModal', 'openResetPasswordModal'])
+
+const { t } = useI18n()
 </script>

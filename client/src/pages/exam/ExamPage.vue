@@ -1,10 +1,23 @@
 <template>
   <div>
-    {{ question }}
+    <h2 style="font-size: 1.5rem" class="leading-8">
+      Question: {{ question }}
+    </h2>
   </div>
-  <input v-model="answer" />
-  <button @click="send_answer">Отправить</button>
-  {{ response }}
+  <br>
+  <h2>
+    Answer:
+  </h2>
+  <div>
+    <VaTextarea rows="10" class="w-full text-lg rounded-lg border" v-model="answer" />
+    <VaButton type="button" class="mt-2 float-right right-10" size="large" @click="send_answer" color="success" gradient>Отправить</VaButton>
+  </div>
+  <div class="mt-12">
+    <h2 class="mt-2">
+      Corrections:
+    </h2>
+    <VaTextarea rows="10" class="w-full text-lg rounded-lg border" disabled v-model="response" />
+  </div>
 </template>
 
 <script>
@@ -23,21 +36,22 @@ export default {
   },
   methods: {
     send_answer() {
-      axios
-        .post(
-          '/api/check_answer',
-          {
-            question: String(this.question),
-            answer: String(this.answer),
-          },
-          {
-            headers: {
-              Accept: 'application/json',
-              'Content-Type': 'application/json',
-            },
-          },
-        )
-        .then((response) => (this.response = response.data))
+      this.response = "fasfaskbhkvbkzjsvbkasufkayufjkdabksdjaskyufbaksdbkasjdhfbkhjfbkajh kjd fhbakds hbfakjhfbkasjh dksjh vfkajdvksv asjdhvf aksdhvf khf kfvk sbflakjbbsldiabdskjfbsj"
+      // axios
+      //   .post(
+      //     '/api/check_answer',
+      //     {
+      //       question: String(this.question),
+      //       answer: String(this.answer),
+      //     },
+      //     {
+      //       headers: {
+      //         Accept: 'application/json',
+      //         'Content-Type': 'application/json',
+      //       },
+      //     },
+      //   )
+      //   .then((response) => (this.response = response.data))
     },
   },
 }

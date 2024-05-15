@@ -202,10 +202,24 @@
     "dark": "Dark",
     "light": "Light"
   },
+  "preferences": {
+    "Preferences": "Preferences",
+    "Account": "Account",
+    "member_since": "Member since",
+    "Name": "Name",
+    "Email": "Email",
+    "Password": "Password",
+    "Edit": "Edit",
+    "reset_password": "Reset password",
+    "twoFA": "Two-factor authentication",
+    "email_sub": "Email subscriptions",
+    "manage": "To manage what emails you get, visit the",
+    "manage_button": "Notification settings"
+  },
   "settings": {
     "settings": "Settings",
     "theme": "Theme",
     "preferences": "General preferences",
-    "Language": "Language",
+    "Language": "Language"
   }
 }
