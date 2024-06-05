@@ -1,16 +1,11 @@
 <template>
-  <VaInput v-model="searchValue" class="mb-4" placeholder="Search">
-    <template #appendInner>
-      <VaIcon color="secondary" name="mso-search" />
-    </template>
-  </VaInput>
   <section v-if="filteredCategories.length" class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-5">
     <template v-for="category in filteredCategories" :key="category.id">
       <VaCard class="col-span-3 md:col-span-1 min-h-[146px]" href="#">
         <VaCardContent class="leading-5 text-sm">
-          <VaIcon :name="`mso-${category.icon}`" class="font-light mb-2" color="primary" size="2rem" />
-          <h2 class="text-primary mb-2 text-primary text-lg leading-7 font-bold">{{ category.name }}</h2>
-          <p>{{ category.intro }}</p>
+          <VaIcon :name="`mso-${category.icon}`" class="font-light mb-2" color="primary" size="2rem"/>
+          <h2 class="text-primary mb-2 text-primary text-lg leading-7 font-bold">{{ t('faq.categories.' + category.name) }}</h2>
+          <p>{{ t('faq.categories.' + category.description) }}</p>
         </VaCardContent>
       </VaCard>
     </template>
@@ -22,7 +17,10 @@
 
 <script lang="ts" setup>
 import categories from '../data/popularCategories.json'
-import { ref, computed } from 'vue'
+import {ref, computed} from 'vue'
+import {useI18n} from "vue-i18n";
+
+const {t} = useI18n()
 
 const searchValue = ref('')
 

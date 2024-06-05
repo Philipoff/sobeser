@@ -28,12 +28,12 @@
         :style="{ backgroundColor: colorToRgba(getColor('primary'), 0.07) }"
       >
         <div class="flex flex-col gap-2 flex-grow">
-          <div class="text-lg font-bold leading-relaxed">Important note</div>
+          <div class="text-lg font-bold leading-relaxed">{{ t('payments.important_note') }}</div>
           <div class="text-secondary text-sm leading-tight">
-            Please carefully read Product Terms before adding your new payment card
+            {{ t('payments.safety_card') }}
           </div>
         </div>
-        <VaButton class="flex-none w-full sm:w-auto" @click="showCreate = true">Add card</VaButton>
+        <VaButton class="flex-none w-full sm:w-auto" @click="showCreate = true">{{ t('payments.add_card') }}</VaButton>
       </div>
     </template>
   </div>
@@ -50,6 +50,8 @@ import { PaymentCard } from '../../types'
 import { useModal, useToast } from 'vuestic-ui'
 import PaymentCardCreateModal from './PaymentCardCreateModal.vue'
 import PaymentCardUpdateModal from './PaymentCardUpdateModal.vue'
+import {useI18n} from "vue-i18n";
+const { t } = useI18n()
 
 const store = usePaymentCardsStore()
 

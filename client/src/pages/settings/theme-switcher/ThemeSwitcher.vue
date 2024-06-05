@@ -12,9 +12,14 @@ const { applyPreset, currentPresetName } = useColors()
 
 const theme = computed({
   get() {
+    if (localStorage.getItem("theme")) {
+      applyPreset(localStorage.getItem("theme"))
+      return localStorage.getItem("theme")
+    }
     return currentPresetName.value
   },
   set(value) {
+    localStorage.setItem("theme", value)
     applyPreset(value)
   },
 })
@@ -22,7 +27,7 @@ const theme = computed({
 const { t } = useI18n()
 
 const options = [
-  { label: t('buttonSelect.dark'), value: 'dark' },
-  { label: t('buttonSelect.light'), value: 'light' },
+  { label: '🌑', value: 'dark' },
+  { label: '☀️', value: 'light' },
 ]
 </script>

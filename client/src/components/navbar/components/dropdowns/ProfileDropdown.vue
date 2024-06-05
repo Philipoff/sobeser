@@ -1,35 +1,8 @@
 <template>
   <div class="profile-dropdown-wrapper">
-    <VaDropdown v-model="isShown" :offset="[9, 0]" class="profile-dropdown" stick-to-edges>
-      <template #anchor>
-        <VaButton preset="secondary" color="textPrimary">
-          <span class="profile-dropdown__anchor min-w-max">
-            <slot />
-            <VaAvatar :size="32" color="warning"> 😍 </VaAvatar>
-          </span>
-        </VaButton>
-      </template>
-      <VaDropdownContent
-        class="profile-dropdown__content md:w-60 px-0 py-4 w-full"
-        :style="{ '--hover-color': hoverColor }"
-      >
-        <VaList v-for="group in options" :key="group.name">
-          <header v-if="group.name" class="uppercase text-[var(--va-secondary)] opacity-80 font-bold text-xs px-4">
-            {{ t(`user.${group.name}`) }}
-          </header>
-          <VaListItem
-            v-for="item in group.list"
-            :key="item.name"
-            class="menu-item px-4 text-base cursor-pointer h-8"
-            v-bind="resolveLinkAttribute(item)"
-          >
-            <VaIcon :name="item.icon" class="pr-1" color="secondary" />
-            {{ t(`user.${item.name}`) }}
-          </VaListItem>
-          <VaListSeparator v-if="group.separator" class="mx-3 my-2" />
-        </VaList>
-      </VaDropdownContent>
-    </VaDropdown>
+    <VaButton v-model="isShown" preset="secondary" color="textPrimary" @click="$router.push('/faq')">
+      <svg viewBox="4 4 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+    </VaButton>
   </div>
 </template>
 

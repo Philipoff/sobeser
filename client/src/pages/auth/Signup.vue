@@ -1,15 +1,15 @@
 <template>
   <VaForm ref="form" @submit.prevent="submit">
-    <h1 class="font-semibold text-4xl mb-4">Sign up</h1>
+    <h1 class="font-semibold text-4xl mb-4">{{ t('auth.SignUp') }}</h1>
     <p class="text-base mb-4 leading-5">
-      Have an account?
-      <RouterLink :to="{ name: 'login' }" class="font-semibold text-primary">Login</RouterLink>
+      {{ t('auth.already_account') }}
+      <RouterLink :to="{ name: 'login' }" class="font-semibold text-primary">{{ t('auth.authorize') }}</RouterLink>
     </p>
     <VaInput
       v-model="formData.email"
       :rules="[(v) => !!v || 'Email field is required', (v) => /.+@.+\..+/.test(v) || 'Email should be valid']"
       class="mb-4"
-      label="Email"
+      :label="t('auth.email')"
       type="email"
     />
     <VaValue v-slot="isPasswordVisible" :default-value="false">
@@ -19,8 +19,8 @@
         :rules="passwordRules"
         :type="isPasswordVisible.value ? 'text' : 'password'"
         class="mb-4"
-        label="Password"
-        messages="Password should be 8+ characters: letters, numbers, and special characters."
+        :label="t('auth.password')"
+        :messages="t('auth.password_message')"
         @clickAppendInner.stop="isPasswordVisible.value = !isPasswordVisible.value"
       >
         <template #appendInner>
@@ -40,7 +40,7 @@
         ]"
         :type="isPasswordVisible.value ? 'text' : 'password'"
         class="mb-4"
-        label="Repeat Password"
+        :label="t('auth.password_repeat')"
         @clickAppendInner.stop="isPasswordVisible.value = !isPasswordVisible.value"
       >
         <template #appendInner>
@@ -54,7 +54,7 @@
     </VaValue>
 
     <div class="flex justify-center mt-4">
-      <VaButton class="w-full" @click="submit"> Create account</VaButton>
+      <VaButton class="w-full" @click="submit">{{ t('auth.createAccount') }}</VaButton>
     </div>
   </VaForm>
 </template>
@@ -65,8 +65,10 @@ import { useRouter } from 'vue-router'
 import { useForm, useToast } from 'vuestic-ui'
 
 const { validate } = useForm('form')
-const { push } = useRouter()
 const { init } = useToast()
+const { t } = useI18n()
+import axios from 'axios'
+import {useI18n} from "vue-i18n";
 
 const formData = reactive({
   email: '',
@@ -76,9 +78,26 @@ const formData = reactive({
 
 const submit = () => {
   if (validate()) {
-    init({
-      message: "You've successfully signed up",
-      color: 'success',
+    axios
+      .post(
+        '/api/auth/register',
+        {
+          email: String(formData.email),
+          password: String(formData.password),
+        },
+        {
+          headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+          },
+        },
+      )
+      .then(response => {
+        if (response.status === 201) {
+          window.location.href = '/faq';
+        }
+      }).catch(error => {
+      alert(error.response.data.detail)
     })
   }
 }

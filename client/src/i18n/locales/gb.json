@@ -1,4 +1,5 @@
 {
+  "edit": "Edit",
   "auth": {
     "agree": "I agree to",
     "createAccount": "Create account",
@@ -10,7 +11,16 @@
     "sign_up": "Sign Up",
     "keep_logged_in": "Keep me logged in",
     "termsOfUse": "Terms of Use.",
-    "reset_password": "Reset password"
+    "reset_password": "Reset password",
+    "authorize": "Authorize",
+    "SignUp": "Registration",
+    "already_account": "Have an account?",
+    "password_message": "Password should be 8+ characters: letters, numbers, and special characters.",
+    "password_repeat": "Repeat password",
+    "forgot_password": "Forgot your password?",
+    "forgot_message": "If you've forgotten your password, don't worry. Simply enter your email address below, and we'll send you an email with a temporary password.",
+    "send_password": "Send password",
+    "go_back": "Go back"
   },
   "404": {
     "title": "This page’s gone fishing.",
@@ -71,6 +81,40 @@
     "sentMessage": "sent you a message",
     "uploadedZip": "uploaded a new Zip file with {type}",
     "startedTopic": "started a new topic"
+  },
+  "faq": {
+    "how_to_help": "How can we help you?",
+    "categories": {
+      "search": "Search",
+      "name_using": "Getting Started",
+      "description_using": "Start using Service easily with the sidebar",
+      "name_billing": "Billing and Account",
+      "description_billing": "Adjust your subscription and limits to your liking.",
+      "name_info": "Theme",
+      "description_info": "Change the theme of the app in the application settings",
+      "name_exam": "Start exam",
+      "description_exam": "Test your knowledge with the help of the exam on the sidebar",
+      "name_question": "Check all interview questions",
+      "description_question": "Prepare for the interview with a list of questions",
+      "name_language": "Language",
+      "description_language": "You can switch language in the application settings",
+      "name_notifications": "Notifications",
+      "description_notifications": "Setting up notifications in the app settings"
+    },
+    "questions": {
+      "popular_questions": "Popular questions",
+      "reload_page_q": "How do I reload a page?",
+      "reload_page_a1": "Get ready for some page-refreshing wisdom! We're about to dive into the magical world of reloading web pages. Here are some techniques:",
+      "reload_page_a2": "Press the F5 key or Ctrl + R (Windows/Linux) or Command + R (Mac) to manually reload the current page.",
+      "reload_page_a3": "Click the reload button in your browser. It usually looks like a circular arrow and is typically located in the address bar.",
+      "reload_page_a4": "Use JavaScript to reload the page programmatically: location.reload();",
+      "return_policy_q": "What is your return/exchange policy?",
+      "return_policy_a": "We offer digital media (software) that can be used instantly after a purchase has been made. There is no “trial” or “grace period” after purchasing any product which means all sales are final. Once you have purchased the software, there is no way to “return” it.\n\nIt is a member’s responsibility to cancel any payment. If you decide to stop the membership and discontinue using our Products, remember to login to your PayPal and cancel the Authorization.\n\nThere will be no refund for members that forget to cancel their subscription.",
+      "how_to_use_q": "How do I use the application?",
+      "how_to_use_a": "You can find the list of questions in the application menu, as well as use the \"exam\" tab to answer the questions.",
+      "contact_q": "I still have questions. Where should I contact?",
+      "contact_a": "If you have any questions or suggestions, you can contact Philipez yandex.ru"
+    }
   },
   "user": {
     "language": "Change language",
@@ -169,6 +213,19 @@
     "feature_5": "Improved models for feedback",
     "feature_6": "Posting a resume on the platform",
     "feature_7": "Consultation with experts"
+  },
+  "payments": {
+    "payment_methods": "Payment methods",
+    "my_cards": "My cards",
+    "billing_address": "Billing address",
+    "main_card": "Main card",
+    "backup_visa": "Backup card",
+    "card_expires_at": "Card expires at",
+    "safety_address": "Please ensure the provided billing address matches the information on file with your financial institution to avoid any processing delays",
+    "safety_card": "Please carefully read Product Terms before adding your new payment card",
+    "important_note": "Important note",
+    "add_card": "Add card",
+    "new_address": "New address"
   },
   "colors": {
     "themeColors": "Theme Colors",

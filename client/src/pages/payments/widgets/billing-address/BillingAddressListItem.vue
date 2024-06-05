@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="w-full sm:w-auto flex-none flex sm:block">
-      <VaButton class="mr-2 flex-grow" preset="primary" @click="emits('edit')">Edit</VaButton>
+      <VaButton class="mr-2 flex-grow" preset="primary" @click="emits('edit')">{{ t('edit') }}</VaButton>
       <VaButton icon="mso-delete" preset="primary" aria-label="Remove" @click="emits('remove')" />
     </div>
   </div>
@@ -23,7 +23,8 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { BillingAddress } from '../../types'
-
+import {useI18n} from "vue-i18n";
+const { t } = useI18n()
 const emits = defineEmits(['edit', 'remove'])
 
 const props = defineProps<{

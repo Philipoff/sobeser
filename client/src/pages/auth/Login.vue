@@ -51,8 +51,9 @@ import { useForm, useToast } from 'vuestic-ui'
 import { validators } from '../../services/utils'
 
 const { validate } = useForm('form')
-const { push } = useRouter()
 const { init } = useToast()
+import axios from 'axios'
+
 
 const formData = reactive({
   email: '',
@@ -62,7 +63,27 @@ const formData = reactive({
 
 const submit = () => {
   if (validate()) {
-    init({ message: "You've successfully logged in", color: 'success' })
+    axios
+      .post(
+        '/api/auth/login',
+        {
+          email: String(formData.email),
+          password: String(formData.password),
+        },
+        {
+          headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+          },
+        },
+      )
+      .then(response => {
+        if (response.status === 200) {
+          window.location.href = '/faq';
+        }
+      }).catch(error => {
+      alert(error.response.data.detail)
+    })
   }
 }
 </script>

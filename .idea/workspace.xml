@@ -3,12 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="ab9f1124-6f23-41b8-b781-3e7271d8242f" name="Changes" comment="Backend + RU locale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/services/utils/chatgpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/utils/chatgpt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/services/utils/gemini.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/utils/gemini.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/navbar/components/dropdowns/ProfileDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navbar/components/dropdowns/ProfileDropdown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/i18n/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/i18n/locales/gb.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/locales/gb.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/i18n/locales/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/locales/ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/exam/ExamPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/exam/ExamPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/Preferences.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/Preferences.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/preferences-header/PreferencesHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/preferences-header/PreferencesHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/settings/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/settings/Settings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/RecoverPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/RecoverPassword.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Signup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Signup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/FaqPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/FaqPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/data/popularCategories.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/data/popularCategories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/widgets/Categories.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/widgets/Categories.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/widgets/Questions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/widgets/Questions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/widgets/RequestDemo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/PaymentsPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/PaymentsPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/settings/language-switcher/LanguageSwitcher.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/settings/language-switcher/LanguageSwitcher.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/settings/theme-switcher/ThemeSwitcher.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/settings/theme-switcher/ThemeSwitcher.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/global-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/global-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/payment-cards.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/payment-cards.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,21 +55,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/sobeser",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "ts.external.directory.path": "C:\\sobeser\\client\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/sobeser/client/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\sobeser\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\sobeser\client\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\sobeser\backend\services\utils" />
       <recent name="C:\sobeser\backend\services" />
@@ -208,7 +232,8 @@
       <workItem from="1715475672461" duration="297000" />
       <workItem from="1715479713188" duration="1846000" />
       <workItem from="1715709707999" duration="2694000" />
-      <workItem from="1715762810749" duration="5855000" />
+      <workItem from="1715762810749" duration="6390000" />
+      <workItem from="1717327303242" duration="392000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1715203608830</created>
@@ -259,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715481645897</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Backend + RU locale">
+      <created>1715794926347</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715794926347</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

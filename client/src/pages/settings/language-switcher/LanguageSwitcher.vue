@@ -32,10 +32,15 @@ const options = Object.values(languageCodes)
 
 const model = computed({
   get() {
+    if (localStorage.getItem("language")) {
+      locale.value = localStorage.getItem("language")
+      return languageCodes[localStorage.getItem("language")]
+    }
     return languageCodes[locale.value]
-  },
+    },
   set(value) {
     locale.value = languageName[value]
+    localStorage.setItem("language", languageName[value])
   },
 })
 </script>

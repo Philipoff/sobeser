@@ -2,7 +2,7 @@
 
 import { defineStore } from 'pinia'
 import { sleep } from '../services/utils'
-import { PaymentSystemType, PaymentCard } from '../pages/payments/types' // adjust the import path accordingly
+import { PaymentSystemType, PaymentCard } from '../pages/payments/types'
 
 // Simulated fetch function
 const fetchPaymentCards = async () => {
@@ -10,7 +10,7 @@ const fetchPaymentCards = async () => {
   return [
     {
       id: '1',
-      name: 'Main card',
+      name: "main_card",
       isPrimary: true,
       paymentSystem: PaymentSystemType.Visa,
       cardNumberMasked: '****1679',
@@ -18,15 +18,7 @@ const fetchPaymentCards = async () => {
     },
     {
       id: '2',
-      name: 'Online shopping',
-      isPrimary: false,
-      paymentSystem: PaymentSystemType.MasterCard,
-      cardNumberMasked: '****8921',
-      expirationDate: '1123',
-    },
-    {
-      id: '3',
-      name: 'Backup Visa',
+      name: 'backup_visa',
       isPrimary: false,
       paymentSystem: PaymentSystemType.MasterCard,
       cardNumberMasked: '****4523',
@@ -34,7 +26,6 @@ const fetchPaymentCards = async () => {
     },
   ]
 }
-
 export const usePaymentCardsStore = defineStore({
   id: 'paymentCards',
   state: () => ({
