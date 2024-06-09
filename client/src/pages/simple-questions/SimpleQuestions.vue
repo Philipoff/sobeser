@@ -3,21 +3,24 @@
   <h3 class="page-sub-title">{{ t('questions.Help') }}</h3>
 
   <div v-for="question in questions">
-    <div @click="isEditNameModalOpen=true; clicked_question=question['answer']" class="flex mb-4 flex-col p-4 space-y-10 bg-backgroundSecondary rounded-lg">
+    <div
+      class="flex mb-4 flex-col p-4 space-y-10 bg-backgroundSecondary rounded-lg"
+      @click="isEditNameModalOpen = true;
+              clicked_question = question['answer'];"
+    >
       <VaTextarea v-model="question['question']" autosize readonly></VaTextarea>
     </div>
   </div>
-  <AnswerModal v-if="isEditNameModalOpen" @cancel="isEditNameModalOpen = false" v-model:answer="clicked_question"/>
+  <AnswerModal v-if="isEditNameModalOpen" v-model:answer="clicked_question" @cancel="isEditNameModalOpen = false"/>
 </template>
 <script lang="ts" setup>
 import AnswerModal from './modals/AnswerModal.vue'
 
 import questions from '../../data/pages/python-simple-questions.json'
-import {ref} from "vue";
-import {useI18n} from "vue-i18n";
+import {ref} from 'vue'
+import {useI18n} from 'vue-i18n'
 
-const { t } = useI18n()
+const {t} = useI18n()
 const isEditNameModalOpen = ref(false)
-var clicked_question = ""
-
+const clicked_question = ''
 </script>

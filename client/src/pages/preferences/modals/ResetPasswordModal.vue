@@ -51,8 +51,12 @@
         </div>
       </div>
       <div class="flex flex-col-reverse md:justify-end md:flex-row md:space-x-4">
-        <VaButton :style="buttonStyles" preset="secondary" color="secondary" @click="emits('cancel')">{{ t('recover_password.Cancel') }}</VaButton>
-        <VaButton :style="buttonStyles" class="mb-4 md:mb-0" type="submit" @click="submit">{{ t('recover_password.Update Password') }}</VaButton>
+        <VaButton :style="buttonStyles" preset="secondary" color="secondary" @click="emits('cancel')">{{
+          t('recover_password.Cancel')
+        }}</VaButton>
+        <VaButton :style="buttonStyles" class="mb-4 md:mb-0" type="submit" @click="submit">{{
+          t('recover_password.Update Password')
+        }}</VaButton>
       </div>
     </VaForm>
   </VaModal>
@@ -62,7 +66,7 @@ import { ref } from 'vue'
 import { useForm, useToast } from 'vuestic-ui'
 
 import { buttonStyles } from '../styles'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const oldPassowrd = ref<string>()
 const newPassword = ref<string>()

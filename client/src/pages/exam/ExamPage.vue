@@ -1,70 +1,77 @@
 <template>
   <div>
-    <h2 style="font-size: 1.5rem" class="leading-8">
-      {{ t('exam.Question') }}: {{ requestData.question }}
-    </h2>
+    <h2 style="font-size: 1.5rem" class="leading-8">{{ t('exam.Question') }}: {{ requestData.question }}</h2>
   </div>
-  <br>
-  <h2>
-    {{ t('exam.Answer') }}:
-  </h2>
+  <br />
+  <h2>{{ t('exam.Answer') }}:</h2>
   <div>
-    <VaTextarea rows="10" class="w-full text-lg rounded-lg border" v-model="requestData.answer"/>
-    <VaButton type="button" class="mt-2 float-right right-10" size="large" @click="send_answer" color="success"
-              gradient :disabled="status.isSubmitting">
+    <VaTextarea v-model="requestData.answer" rows="10" class="w-full text-lg rounded-lg border" />
+    <VaButton
+      type="button"
+      class="mt-2 float-right right-10"
+      size="large"
+      color="success"
+      gradient
+      :disabled="status.isSubmitting"
+      @click="send_answer"
+    >
       {{ t('exam.Send') }}
     </VaButton>
   </div>
   <div class="mt-12">
-    <h2 class="mt-2">
-      {{ t('exam.Corrections') }}:
-    </h2>
-    <VaTextarea class="p-2 m-2 w-full text-lg rounded-lg border" v-html="marked.parse(responseData.response)" :autosize="true" :readonly="true" style="width: 100%"></VaTextarea>
+    <h2 class="mt-2">{{ t('exam.Corrections') }}:</h2>
+    <VaTextarea
+      class="p-2 m-2 w-full text-lg rounded-lg border"
+      :autosize="true"
+      :readonly="true"
+      style="width: 100%"
+      v-html="marked.parse(responseData.response)"
+    ></VaTextarea>
   </div>
 </template>
 
 <script lang="ts" setup>
-import {useI18n} from "vue-i18n";
-import {reactive} from "vue";
-import axios from "axios";
-import {marked} from "marked";
+import { useI18n } from 'vue-i18n'
+import { reactive } from 'vue'
+import axios from 'axios'
+import { marked } from 'marked'
 
 import questions from '../../data/pages/python-simple-questions.json'
 
-const {t} = useI18n()
+const { t } = useI18n()
 const status = reactive({
-  isSubmitting: false
-});
+  isSubmitting: false,
+})
 
 const requestData = reactive({
-  question: questions[Math.floor(Math.random() * questions.length)]["question"],
+  question: questions[Math.floor(Math.random() * questions.length)]['question'],
   answer: '',
 })
 
 const responseData = reactive({
-  response: ''
+  response: '',
 })
 
 const send_answer = () => {
-  status.isSubmitting = true;
+  status.isSubmitting = true
   axios
     .post(
-      "/api/answer_processing/check_answer",
+      '/api/answer_processing/check_answer',
       {
         question: String(requestData.question),
         answer: String(requestData.answer),
       },
       {
         headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
         },
       },
     )
-    .then(res => {
+    .then((res) => {
       responseData.response = res.data
-      status.isSubmitting = false;
-    });
+      status.isSubmitting = false
+    })
 }
 
 // function getStatus(taskID) {

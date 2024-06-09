@@ -23,7 +23,9 @@
       <div class="max-w-[748px]">
         <p>{{ t('preferences.manage') }}</p>
         <div class="flex space-x-1 w-fit">
-          <RouterLink :to="{ name: 'settings' }" class="font-semibold text-primary">{{ t('preferences.manage_button') }}</RouterLink>
+          <RouterLink :to="{ name: 'settings' }" class="font-semibold text-primary">{{
+            t('preferences.manage_button')
+          }}</RouterLink>
         </div>
       </div>
     </div>
@@ -33,12 +35,12 @@
 import { useUserStore } from '../../../stores/user-store'
 
 import { buttonStyles } from '../styles'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const store = useUserStore()
 
 const emits = defineEmits(['openNameModal', 'openResetPasswordModal'])
 
 const { t } = useI18n()
-const email = localStorage.getItem("email");
+const email = localStorage.getItem('email')
 </script>

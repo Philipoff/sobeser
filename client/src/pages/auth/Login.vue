@@ -51,8 +51,7 @@ import { validators } from '../../services/utils'
 const { validate } = useForm('form')
 const { init } = useToast()
 import axios from 'axios'
-import {useUserStore} from "../../stores/user-store";
-
+import { useUserStore } from '../../stores/user-store'
 
 const store = useUserStore()
 
@@ -73,21 +72,22 @@ const submit = () => {
         },
         {
           headers: {
-            "Accept": "application/json",
-            "Content-Type": "application/json",
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
           },
         },
       )
-      .then(response => {
+      .then((response) => {
         if (response.status === 200) {
-          localStorage.setItem("email", formData.email)
-          localStorage.setItem("access_token", response.data.access_token)
-          localStorage.setItem("refresh_token", response.data.refresh_token)
-          window.location.href = '/preferences';
+          localStorage.setItem('email', formData.email)
+          localStorage.setItem('access_token', response.data.access_token)
+          localStorage.setItem('refresh_token', response.data.refresh_token)
+          window.location.href = '/preferences'
         }
-      }).catch(error => {
-      alert(error.response.data.detail)
-    })
+      })
+      .catch((error) => {
+        alert(error.response.data.detail)
+      })
   }
 }
 </script>

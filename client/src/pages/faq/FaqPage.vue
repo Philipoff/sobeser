@@ -9,7 +9,7 @@
 import Categories from './widgets/Categories.vue'
 import Questions from './widgets/Questions.vue'
 import Navigation from './widgets/Navigation.vue'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 </script>

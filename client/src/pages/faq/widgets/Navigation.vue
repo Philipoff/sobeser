@@ -16,9 +16,9 @@
 <script setup>
 import { computed } from 'vue'
 import navigation from '../data/navigationLinks.json'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
-const {t} = useI18n()
+const { t } = useI18n()
 
 const navSections = computed(() => {
   return Object.keys(navigation)

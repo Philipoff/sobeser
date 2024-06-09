@@ -50,7 +50,7 @@ import { PaymentCard } from '../../types'
 import { useModal, useToast } from 'vuestic-ui'
 import PaymentCardCreateModal from './PaymentCardCreateModal.vue'
 import PaymentCardUpdateModal from './PaymentCardUpdateModal.vue'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 const store = usePaymentCardsStore()

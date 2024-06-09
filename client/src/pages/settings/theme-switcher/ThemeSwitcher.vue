@@ -12,14 +12,14 @@ const { applyPreset, currentPresetName } = useColors()
 
 const theme = computed({
   get() {
-    if (localStorage.getItem("theme")) {
-      applyPreset(localStorage.getItem("theme"))
-      return localStorage.getItem("theme")
+    if (localStorage.getItem('theme')) {
+      applyPreset(localStorage.getItem('theme'))
+      return localStorage.getItem('theme')
     }
     return currentPresetName.value
   },
   set(value) {
-    localStorage.setItem("theme", value)
+    localStorage.setItem('theme', value)
     applyPreset(value)
   },
 })

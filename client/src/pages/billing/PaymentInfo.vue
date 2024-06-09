@@ -62,9 +62,9 @@ import { computed, ref } from 'vue'
 import { usePaymentCardsStore } from '../../stores/payment-cards'
 
 import ChangeYourPaymentPlan from './modals/ChangeYourPaymentPlan.vue'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
-const { t }= useI18n()
+const { t } = useI18n()
 const paymentPlan = ref({
   id: '1',
   name: 'Gold',

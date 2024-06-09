@@ -3,20 +3,20 @@
     <VaButton
       v-if="!isMobile"
       preset="secondary"
-      @click="$router.push('/faq')"
       target="_blank"
       color="textPrimary"
       class="app-navbar-actions__item flex-shrink-0 mx-0"
+      @click="$router.push('/faq')"
     >
       {{ t('aboutVuesticAdmin') }}
     </VaButton>
     <VaButton
       v-if="!isMobile"
       preset="secondary"
-      @click="$router.push('/faq')"
       target="_blank"
       color="textPrimary"
       class="app-navbar-actions__item flex-shrink-0 mx-0"
+      @click="$router.push('/faq')"
     >
       {{ t('helpAndSupport') }}
     </VaButton>

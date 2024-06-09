@@ -1,8 +1,9 @@
 <template>
-  <h1 class="page-title">{{ t("billing.choose_your_plan") }}</h1>
+  <h1 class="page-title">{{ t('billing.choose_your_plan') }}</h1>
   <div class="py-4 text-lg leading-[26px]">
-    {{ t("billing.more_info") }}
-    <span class="text-primary underline">{{ t("billing.pricing_guidelines") }}</span>.
+    {{ t('billing.more_info') }}
+    <span class="text-primary underline">{{ t('billing.pricing_guidelines') }}</span
+    >.
   </div>
   <div class="flex flex-col p-4 bg-backgroundSecondary">
     <div class="flex justify-center">
@@ -51,7 +52,6 @@
               class="flex justify-between items-center text-lg leading-[26px]"
             >
               <p :class="{ 'text-secondary': !feature.isAvailable }">
-
                 {{ t('billing.' + feature.description) }}
               </p>
               <VaIcon v-if="feature.isAvailable" color="primary" name="mso-check" size="20px" />
@@ -79,7 +79,7 @@ import { useToast, useModal } from 'vuestic-ui'
 import { badgeStyles, selectButtonStyles } from './styles'
 
 import { pricingPlans } from './options'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const { init } = useToast()
 const { init: initModal } = useModal()
