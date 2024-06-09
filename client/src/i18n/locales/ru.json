@@ -1,5 +1,12 @@
 {
   "edit": "Изменить",
+  "current": "Текущий",
+  "select": "Выбрать",
+  "selected": "Выбран",
+  "questions": {
+    "Questions": "Вопросы",
+    "Help": "Нажмите на вопрос, чтобы увидеть ответ"
+  },
   "auth": {
     "agree": "Я согласен",
     "createAccount": "Создать аккаунт",
@@ -23,6 +30,16 @@
     "forgot_message": "Если вы забыли свой пароль, не волнуйтесь. Просто введите свой адрес электронной почты ниже, и мы отправим вам электронное письмо с временным паролем.",
     "send_password": "Отправить пароль",
     "go_back": "Вернуться"
+  },
+  "recover_password": {
+    "Reset password": "Восстановить пароль",
+    "Old password": "Старый пароль",
+    "New password": "Новый пароль",
+    "Repeat new password": "Повторите новый пароль",
+    "Must be at least 8 characters long": "Длина должна быть не менее 8 символов",
+    "Must contain at least 6 unique characters": "Должен содержать как минимум 6 уникальных символов",
+    "Cancel": "Отмена",
+    "Update Password": "Обновить пароль"
   },
   "404": {
     "title": "Страницы не существует.",
@@ -58,6 +75,12 @@
     "faq": "FAQ",
     "users": "Пользователи",
     "projects": "Проекты"
+  },
+  "exam": {
+    "Send": "Отправить",
+    "Question": "Вопрос",
+    "Answer": "Ответ",
+    "Corrections": "Исправления"
   },
   "messages": {
     "all": "Все сообщения",
@@ -108,6 +131,37 @@
       "how_to_use_a": "Вы можете найти список вопросов в меню приложения, а также воспользоваться вкладкой \"экзамен\", отвечая на вопросы.",
       "contact_q": "У меня остались вопросы. Куда мне обращаться?",
       "contact_a": "Если у вас остались вопросы, или есть предложения, вы можете обращаться на почту Philipez yandex.ru"
+    },
+    "navigation": {
+      "Rising cost of living": "Безопасность",
+      "Bank accounts": "Банковские счета",
+      "Product support": "Техническая поддержка",
+      "Mobile and Online Banking": "Мобильный и онлайн-банкинг",
+      "Help with money worries": "Помощь в решении денежных проблем",
+
+      "Fraud and Security": "Мошенничество и безопасность",
+      "Secure Key help": "Справка по защищенному ключу",
+      "Fraud and common scams": "Мошенничество и распространенные аферы",
+      "What we need to keep you safe": "Что нам нужно для вашей безопасности",
+      "How we keep you safe": "Как мы обеспечиваем вашу безопасность",
+      "How to keep yourself safe": "Как обезопасить себя",
+      "General bank account help": "Общая справка по банковскому счету",
+      "Switching to first direct": "Переключение на первый прямой",
+      "Statements and balances": "Отчеты и балансы",
+      "Standing orders and Direct Debits": "Постоянные платежные поручения и прямое списание средств",
+      "Debit cards": "Дебетовые карты",
+      "Overdrafts": "Перерасход",
+      "Managing personal details": "Управление личными данными",
+      "Personal loans help": "Помощь в получении личных займов",
+      "Credit card help": "Справка по кредитной карте",
+      "Savings help": "Экономия помогает",
+      "Share dealing help": "Поделитесь помощью в ведении бизнеса",
+      "First Directory help": "Справка по первому каталогу",
+      "Register for Mobile and Online Banking": "Зарегистрируйтесь для мобильного и онлайн-банкинга",
+      "Get help logging on": "Получить помощь при входе в систему",
+      "Move your App to a new phone": "Перенесите свое приложение на новый телефон",
+      "Budgeting and money management": "Составление бюджета и управление денежными потоками",
+      "Dealing with financial difficulty": "Преодоление финансовых трудностей"
     }
   },
   "user": {
@@ -184,7 +238,7 @@
     "more_info": "Если Вам нужно больше информации о тарифах, ознакомьтесь",
     "pricing_guidelines": "Возможностями сервиса",
     "monthly": "Месяц",
-    "annual": "Год",
+    "annual": "Ежегодно",
     "Startup": "Начальный",
     "Advanced": "Продвинутый",
     "Enterprise": "Профессиональный",
@@ -219,7 +273,16 @@
     "safety_card": "Пожалуйста, внимательно ознакомьтесь с условиями продукта, прежде чем добавлять свою новую платежную карту",
     "important_note": "Уведомление",
     "add_card": "Добавить карту",
-    "new_address": "Добавить адрес"
+    "new_address": "Добавить адрес",
+    "payment_info": "Информация о тарифе",
+    "payment_plan": "Текущий тариф"
+  },
+  "billing_info": {
+    "Billing information": "Информация об оплате",
+    "Payment method": "Способ оплаты",
+    "save": "Скидка",
+    "Switch to": "Сменить тариф на",
+    "Invoices": "История"
   },
   "colors": {
     "themeColors": "Theme Colors",
@@ -265,7 +328,15 @@
     "twoFA": "Двухфакторная аутентификация",
     "email_sub": "Уведомления на почту",
     "manage": "Чтобы изменить получаемые уведомления, посетите",
-    "manage_button": "Настройки уведомлений"
+    "manage_button": "Настройки уведомлений",
+
+    "notifications": {
+      "Searching for a job": "Уведомления о трудоустройстве",
+      "Hiring someone": "Нанимаю людей",
+      "Connecting with others": "Сообщения",
+      "Attending events": "Предстоящие события",
+      "News and reports": "Новости и обновления"
+    }
   },
   "settings": {
     "settings": "Настройки",

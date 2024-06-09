@@ -16,22 +16,6 @@ export const useNotificationsStore = defineStore('notifications', {
           name: 'Connecting with others',
           isEnabled: true,
         },
-        postingAndCommenting: {
-          name: 'Posting and commenting',
-          isEnabled: true,
-        },
-        messaging: {
-          name: 'Messaging',
-          isEnabled: true,
-        },
-        groups: {
-          name: 'Groups',
-          isEnabled: false,
-        },
-        pages: {
-          name: 'Pages',
-          isEnabled: true,
-        },
         attendingEvents: {
           name: 'Attending events',
           isEnabled: true,
@@ -39,14 +23,6 @@ export const useNotificationsStore = defineStore('notifications', {
         newsAndReports: {
           name: 'News and reports',
           isEnabled: false,
-        },
-        updatingYourProfile: {
-          name: 'Updating your profile',
-          isEnabled: true,
-        },
-        verifications: {
-          name: 'Verifications',
-          isEnabled: true,
         },
       },
     }

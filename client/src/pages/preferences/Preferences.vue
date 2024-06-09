@@ -16,7 +16,6 @@ import { ref } from 'vue'
 
 import PreferencesHeader from './preferences-header/PreferencesHeader.vue'
 import Settings from './settings/Settings.vue'
-import EditNameModal from './modals/EditNameModal.vue'
 import ResetPasswordModal from './modals/ResetPasswordModal.vue'
 import {useI18n} from "vue-i18n";
 

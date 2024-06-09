@@ -1,5 +1,5 @@
 <template>
-  <h1 class="h1">Billing information</h1>
+  <h1 class="h1">{{ t('billing_info.Billing information') }}</h1>
 
   <VaSkeletonGroup v-if="cardStore.loading">
     <VaSkeleton class="mb-4" height="160px" variant="squared" />
@@ -19,7 +19,9 @@ import MembeshipTier from './MembeshipTier.vue'
 import PaymentInfo from './PaymentInfo.vue'
 import { usePaymentCardsStore } from '../../stores/payment-cards'
 import Invoices from './Invoices.vue'
+import {useI18n} from "vue-i18n";
 
 const cardStore = usePaymentCardsStore()
+const { t } = useI18n()
 cardStore.load()
 </script>

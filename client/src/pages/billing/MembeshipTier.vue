@@ -8,25 +8,20 @@
             class="flex grow flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-1 justify-between items-start md:items-center"
           >
             <div class="flex items-center md:w-48">
-              <div class="font-bold">{{ plan.name }}</div>
-              <VaBadge v-if="plan.type === 'current'" class="ml-2" color="success" text="Selected" />
-            </div>
-            <div class="md:w-48">
-              <p class="mb-1">{{ plan.padletsTotal }} padlets</p>
-              <p>{{ plan.uploadLimit }}&nbsp;/upload</p>
+              <div class="font-bold">{{ t('billing.' + plan.name) }}</div>
+              <VaBadge v-if="plan.type === 'current'" class="ml-2" color="success" :text="t('current')" />
             </div>
             <div class="md:w-48">
               <template v-if="plan.priceMonth">
-                <p class="mb-1">{{ plan.priceMonth }}&nbsp;/month</p>
-                <p>{{ plan.priceYear }}&nbsp;/year</p>
+                <p class="mb-1">{{ t('billing.' + plan.priceMonth)  + ' / ' + t('billing.month') }}</p>
+                <p>{{ t('billing.' + plan.priceYear) + ' / ' + t('billing.year') }}</p>
               </template>
               <p v-else>Free</p>
             </div>
           </div>
           <div class="md:w-48 flex justify-end">
-            <div v-if="plan.type === 'current'" class="font-bold">{{ plan.padletsUsed }} padlets used</div>
-            <VaButton v-else-if="plan.type === 'upgrade'" @click="switchPlan(plan.id)">Upgrade</VaButton>
-            <VaButton v-else preset="primary" @click="switchPlan(plan.id)">Downgrade</VaButton>
+            <div v-if="plan.type === 'current'" class="font-bold">{{ t('selected') }}</div>
+            <VaButton v-else @click="switchPlan(plan.id)">{{ t('select') }}</VaButton>
           </div>
         </div>
 
@@ -58,32 +53,32 @@ type MembershipTier = {
 const plans = reactive<MembershipTier[]>([
   {
     id: '1',
-    name: 'Platinum',
+    name: 'Startup',
     type: 'upgrade',
     padletsUsed: 0,
     padletsTotal: 'Unlimited',
-    priceMonth: '$9.99',
-    priceYear: '$99.99',
+    priceMonth: 'price_month_startup',
+    priceYear: 'price_year_startup',
     uploadLimit: '500MB',
   },
   {
     id: '2',
-    name: 'Gold',
+    name: 'Advanced',
     type: 'current',
     padletsUsed: 19,
     padletsTotal: '20',
-    priceMonth: '$6.99',
-    priceYear: '$69.99',
+    priceMonth: 'price_month_advanced',
+    priceYear: 'price_year_advanced',
     uploadLimit: '100MB',
   },
   {
     id: '3',
-    name: 'Neon',
+    name: 'Enterprise',
     type: 'downgrade',
     padletsUsed: 0,
     padletsTotal: '3',
-    priceMonth: undefined,
-    priceYear: undefined,
+    priceMonth: "price_month_enterprise",
+    priceYear: "price_year_enterprise",
     uploadLimit: '20MB',
   },
 ])

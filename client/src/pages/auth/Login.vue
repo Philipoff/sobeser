@@ -46,14 +46,15 @@
 
 <script lang="ts" setup>
 import { reactive } from 'vue'
-import { useRouter } from 'vue-router'
 import { useForm, useToast } from 'vuestic-ui'
 import { validators } from '../../services/utils'
-
 const { validate } = useForm('form')
 const { init } = useToast()
 import axios from 'axios'
+import {useUserStore} from "../../stores/user-store";
 
+
+const store = useUserStore()
 
 const formData = reactive({
   email: '',
@@ -79,7 +80,10 @@ const submit = () => {
       )
       .then(response => {
         if (response.status === 200) {
-          window.location.href = '/faq';
+          localStorage.setItem("email", formData.email)
+          localStorage.setItem("access_token", response.data.access_token)
+          localStorage.setItem("refresh_token", response.data.refresh_token)
+          window.location.href = '/preferences';
         }
       }).catch(error => {
       alert(error.response.data.detail)

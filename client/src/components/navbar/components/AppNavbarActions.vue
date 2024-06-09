@@ -1,9 +1,9 @@
 <template>
   <div class="app-navbar-actions">
-    <GithubButton v-if="!isMobile" class="app-navbar-actions__item" />
     <VaButton
       v-if="!isMobile"
       preset="secondary"
+      @click="$router.push('/faq')"
       target="_blank"
       color="textPrimary"
       class="app-navbar-actions__item flex-shrink-0 mx-0"
@@ -13,14 +13,13 @@
     <VaButton
       v-if="!isMobile"
       preset="secondary"
-      href="https://discord.gg/u7fQdqQt8c"
+      @click="$router.push('/faq')"
       target="_blank"
       color="textPrimary"
       class="app-navbar-actions__item flex-shrink-0 mx-0"
     >
       {{ t('helpAndSupport') }}
     </VaButton>
-    <NotificationDropdown class="app-navbar-actions__item" />
     <ProfileDropdown class="app-navbar-actions__item app-navbar-actions__item--profile mr-1" />
   </div>
 </template>

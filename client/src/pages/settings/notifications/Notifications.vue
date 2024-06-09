@@ -4,7 +4,7 @@
     <div v-for="notification in notifications" :key="notification.name" class="group">
       <div class="flex items-center justify-between overflow-x-hidden">
         <p class="text-regularLarge">
-          {{ notification.name }}
+          {{ t('preferences.notifications.' + notification.name) }}
         </p>
         <VaSwitch v-model="notification.isEnabled" size="small" />
       </div>
@@ -14,6 +14,8 @@
 </template>
 <script lang="ts" setup>
 import { useNotificationsStore } from '../../../stores/notifications'
+import {useI18n} from "vue-i18n";
 
 const { notifications } = useNotificationsStore()
+const { t } = useI18n()
 </script>

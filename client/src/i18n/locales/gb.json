@@ -1,5 +1,12 @@
 {
   "edit": "Edit",
+  "current": "Current",
+  "select": "Select",
+  "selected": "Selected",
+  "questions": {
+    "Questions": "Questions",
+    "Help": "Press the question to see answer"
+  },
   "auth": {
     "agree": "I agree to",
     "createAccount": "Create account",
@@ -12,15 +19,27 @@
     "keep_logged_in": "Keep me logged in",
     "termsOfUse": "Terms of Use.",
     "reset_password": "Reset password",
+
     "authorize": "Authorize",
     "SignUp": "Registration",
     "already_account": "Have an account?",
     "password_message": "Password should be 8+ characters: letters, numbers, and special characters.",
     "password_repeat": "Repeat password",
+
     "forgot_password": "Forgot your password?",
     "forgot_message": "If you've forgotten your password, don't worry. Simply enter your email address below, and we'll send you an email with a temporary password.",
     "send_password": "Send password",
     "go_back": "Go back"
+  },
+  "recover_password": {
+    "Reset password": "Reset password",
+    "Old password": "Old password",
+    "New password": "New password",
+    "Repeat new password": "Repeat new password",
+    "Must be at least 8 characters long": "Must be at least 8 characters long",
+    "Must contain at least 6 unique characters": "Must contain at least 6 unique characters",
+    "Cancel": "Cancel",
+    "Update Password": "Update Password"
   },
   "404": {
     "title": "This page’s gone fishing.",
@@ -30,14 +49,6 @@
   "typography": {
     "primary": "Primary text styles",
     "secondary": "Secondary text styles"
-  },
-  "dashboard": {
-    "versions": "Versions",
-    "setupRemoteConnections": "Setup Remote Connections",
-    "currentVisitors": "Current Visitors",
-    "navigationLayout": "navigation layout",
-    "topBarButton": "Top Bar",
-    "sideBarButton": "Side Bar"
   },
   "language": {
     "english": "English",
@@ -64,6 +75,12 @@
     "faq": "FAQ",
     "users": "Users",
     "projects": "Projects"
+  },
+  "exam": {
+    "Send": "Send",
+    "Question": "Question",
+    "Answer": "Answer",
+    "Corrections": "Corrections"
   },
   "messages": {
     "all": "See all messages",
@@ -114,6 +131,37 @@
       "how_to_use_a": "You can find the list of questions in the application menu, as well as use the \"exam\" tab to answer the questions.",
       "contact_q": "I still have questions. Where should I contact?",
       "contact_a": "If you have any questions or suggestions, you can contact Philipez yandex.ru"
+    },
+    "navigation": {
+      "Rising cost of living": "Rising cost of living",
+      "Bank accounts": "Bank accounts",
+      "Product support": "Product support",
+      "Mobile and Online Banking": "Mobile and Online Banking",
+      "Help with money worries": "Help with money worries",
+
+      "Fraud and Security": "Fraud and Security",
+      "Secure Key help": "Secure Key help",
+      "Fraud and common scams": "Fraud and common scams",
+      "What we need to keep you safe": "What we need to keep you safe",
+      "How we keep you safe": "How we keep you safe",
+      "How to keep yourself safe": "How to keep yourself safe",
+      "General bank account help": "General bank account help",
+      "Switching to first direct": "Switching to first direct",
+      "Statements and balances": "Statements and balances",
+      "Standing orders and Direct Debits": "Standing orders and Direct Debits",
+      "Debit cards": "Debit cards",
+      "Overdrafts": "Overdrafts",
+      "Managing personal details": "Managing personal details",
+      "Personal loans help": "Personal loans help",
+      "Credit card help": "Credit card help",
+      "Savings help": "Savings help",
+      "Share dealing help": "Share dealing help",
+      "First Directory help": "First Directory help",
+      "Register for Mobile and Online Banking": "Register for Mobile and Online Banking",
+      "Get help logging on": "Get help logging on",
+      "Move your App to a new phone": "Move your App to a new phone",
+      "Budgeting and money management": "Budgeting and money management",
+      "Dealing with financial difficulty": "Dealing with financial difficulty"
     }
   },
   "user": {
@@ -225,7 +273,16 @@
     "safety_card": "Please carefully read Product Terms before adding your new payment card",
     "important_note": "Important note",
     "add_card": "Add card",
-    "new_address": "New address"
+    "new_address": "New address",
+    "payment_info": "Payment info",
+    "payment_plan": "Payment plan"
+  },
+  "billing_info": {
+    "Billing information": "Billing information",
+    "Payment method": "Payment method",
+    "save": "Save",
+    "Switch to": "Switch to",
+    "Invoices": "История"
   },
   "colors": {
     "themeColors": "Theme Colors",
@@ -271,7 +328,15 @@
     "twoFA": "Two-factor authentication",
     "email_sub": "Email subscriptions",
     "manage": "To manage what emails you get, visit the",
-    "manage_button": "Notification settings"
+    "manage_button": "Notification settings",
+
+    "notifications": {
+      "Searching for a job": "Searching for a job",
+      "Hiring someone": "Hiring someone",
+      "Connecting with others": "Connecting with others",
+      "Attending events": "Attending events",
+      "News and reports": "News and reports"
+    }
   },
   "settings": {
     "settings": "Settings",

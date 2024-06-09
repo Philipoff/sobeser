@@ -53,7 +53,7 @@
       "name": "Savings help"
     },
     {
-      "name": "Sharedealing help"
+      "name": "Share dealing help"
     },
     {
       "name": "First Directory help"
@@ -72,27 +72,10 @@
   ],
   "Help with money worries": [
     {
-      "name": "Budgetting and money management"
+      "name": "Budgeting and money management"
     },
     {
       "name": "Dealing with financial difficulty"
-    }
-  ],
-  "Life events": [
-    {
-      "name": "Help with bereavement"
-    },
-    {
-      "name": "Domestic and financial abuse"
-    },
-    {
-      "name": "Mental health and support"
-    },
-    {
-      "name": "Separation and your banking"
-    },
-    {
-      "name": "Someone else managing finances"
     }
   ]
 }

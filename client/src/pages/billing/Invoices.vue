@@ -1,7 +1,7 @@
 <template>
   <VaCard class="mb-6">
     <VaCardContent>
-      <h2 class="page-sub-title">Invoices</h2>
+      <h2 class="page-sub-title">{{ t('billing_info.Invoices') }}</h2>
       <template v-for="(item, index) in itemsInView" :key="item.id">
         <div class="flex items-center justify-between md:justify-items-stretch">
           <div class="flex items-center w-48">
@@ -34,6 +34,7 @@ import { useI18n } from 'vue-i18n'
 
 const { init } = useToast()
 const { locale } = useI18n()
+const { t } = useI18n()
 
 const minNumberOfInvoices = 7
 const maxNumberOfInvoices = 20

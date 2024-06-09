@@ -1,60 +1,90 @@
 <template>
   <div>
     <h2 style="font-size: 1.5rem" class="leading-8">
-      Question: {{ question }}
+      {{ t('exam.Question') }}: {{ requestData.question }}
     </h2>
   </div>
   <br>
   <h2>
-    Answer:
+    {{ t('exam.Answer') }}:
   </h2>
   <div>
-    <VaTextarea rows="10" class="w-full text-lg rounded-lg border" v-model="answer" />
-    <VaButton type="button" class="mt-2 float-right right-10" size="large" @click="send_answer" color="success" gradient>Отправить</VaButton>
+    <VaTextarea rows="10" class="w-full text-lg rounded-lg border" v-model="requestData.answer"/>
+    <VaButton type="button" class="mt-2 float-right right-10" size="large" @click="send_answer" color="success"
+              gradient :disabled="status.isSubmitting">
+      {{ t('exam.Send') }}
+    </VaButton>
   </div>
   <div class="mt-12">
     <h2 class="mt-2">
-      Corrections:
+      {{ t('exam.Corrections') }}:
     </h2>
-    <VaTextarea rows="10" class="w-full text-lg rounded-lg border" disabled v-model="response" />
+    <VaTextarea class="p-2 m-2 w-full text-lg rounded-lg border" v-html="marked.parse(responseData.response)" :autosize="true" :readonly="true" style="width: 100%"></VaTextarea>
   </div>
 </template>
 
-<script>
-import axios from 'axios'
+<script lang="ts" setup>
+import {useI18n} from "vue-i18n";
+import {reactive} from "vue";
+import axios from "axios";
+import {marked} from "marked";
 
-export default {
-  name: 'ExamPage',
-  data() {
-    return {
-      question:
-        'What approach can you employ to efficiently determine the Longest Common Subsequence (LCS) of two given strings in Python, emphasizing optimization of execution time and leveraging dynamic programming principles?',
-      answer:
-        'To determine the Longest Common Subsequence (LCS) of two strings in Python, one can utilize a greedy search algorithm. This algorithm iteratively selects the largest common character in both strings and adds it to the LCS. However, this approach may not always yield the correct result since it does not consider all possible combinations of characters in the strings',
-      response: '',
-    }
-  },
-  methods: {
-    send_answer() {
-      this.response = "fasfaskbhkvbkzjsvbkasufkayufjkdabksdjaskyufbaksdbkasjdhfbkhjfbkajh kjd fhbakds hbfakjhfbkasjh dksjh vfkajdvksv asjdhvf aksdhvf khf kfvk sbflakjbbsldiabdskjfbsj"
-      // axios
-      //   .post(
-      //     '/api/check_answer',
-      //     {
-      //       question: String(this.question),
-      //       answer: String(this.answer),
-      //     },
-      //     {
-      //       headers: {
-      //         Accept: 'application/json',
-      //         'Content-Type': 'application/json',
-      //       },
-      //     },
-      //   )
-      //   .then((response) => (this.response = response.data))
-    },
-  },
+import questions from '../../data/pages/python-simple-questions.json'
+
+const {t} = useI18n()
+const status = reactive({
+  isSubmitting: false
+});
+
+const requestData = reactive({
+  question: questions[Math.floor(Math.random() * questions.length)]["question"],
+  answer: '',
+})
+
+const responseData = reactive({
+  response: ''
+})
+
+const send_answer = () => {
+  status.isSubmitting = true;
+  axios
+    .post(
+      "/api/answer_processing/check_answer",
+      {
+        question: String(requestData.question),
+        answer: String(requestData.answer),
+      },
+      {
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      },
+    )
+    .then(res => {
+      responseData.response = res.data
+      status.isSubmitting = false;
+    });
 }
+
+// function getStatus(taskID) {
+//   axios.get(`/api/answer_processing/tasks/${taskID}`, {
+//     method: 'GET',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//   })
+//     .then(res => {
+//       console.log(res)
+//       console.log(res.data)
+//       let taskStatus = res.data.task_id
+//       if (taskStatus === 'finished' || taskStatus === 'failed') return false;
+//       setTimeout(function () {
+//         getStatus(res.data.task_id);
+//       }, 1000);
+//     })
+//     .catch(err => console.log(err));
+// }
 </script>
 
 <style scoped></style>
