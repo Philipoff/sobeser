@@ -12,7 +12,9 @@
       type="email"
     />
     <VaButton class="w-full mb-2" @click="submit">{{ t('auth.send_password') }}</VaButton>
-    <VaButton :to="{ name: 'login' }" class="w-full" preset="secondary" @click="submit">{{ t('auth.go_back') }}</VaButton>
+    <VaButton :to="{ name: 'login' }" class="w-full" preset="secondary" @click="submit">{{
+      t('auth.go_back')
+    }}</VaButton>
   </VaForm>
 </template>
 
@@ -20,12 +22,12 @@
 import { ref } from 'vue'
 import { useForm } from 'vuestic-ui'
 import { useRouter } from 'vue-router'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const email = ref('')
 const form = useForm('passwordForm')
 const router = useRouter()
-const {t} = useI18n()
+const { t } = useI18n()
 
 const submit = () => {
   if (form.validate()) {

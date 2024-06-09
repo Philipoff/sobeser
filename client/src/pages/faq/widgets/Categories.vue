@@ -3,8 +3,10 @@
     <template v-for="category in filteredCategories" :key="category.id">
       <VaCard class="col-span-3 md:col-span-1 min-h-[146px]" href="#">
         <VaCardContent class="leading-5 text-sm">
-          <VaIcon :name="`mso-${category.icon}`" class="font-light mb-2" color="primary" size="2rem"/>
-          <h2 class="text-primary mb-2 text-primary text-lg leading-7 font-bold">{{ t('faq.categories.' + category.name) }}</h2>
+          <VaIcon :name="`mso-${category.icon}`" class="font-light mb-2" color="primary" size="2rem" />
+          <h2 class="text-primary mb-2 text-primary text-lg leading-7 font-bold">
+            {{ t('faq.categories.' + category.name) }}
+          </h2>
           <p>{{ t('faq.categories.' + category.description) }}</p>
         </VaCardContent>
       </VaCard>
@@ -17,10 +19,10 @@
 
 <script lang="ts" setup>
 import categories from '../data/popularCategories.json'
-import {ref, computed} from 'vue'
-import {useI18n} from "vue-i18n";
+import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const {t} = useI18n()
+const { t } = useI18n()
 
 const searchValue = ref('')
 

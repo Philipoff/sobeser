@@ -33,7 +33,9 @@
             {{ t('payments.safety_address') }}
           </div>
         </div>
-        <VaButton class="flex-none w-full sm:w-auto" @click="showCreate = true">{{ t('payments.new_address') }}</VaButton>
+        <VaButton class="flex-none w-full sm:w-auto" @click="showCreate = true">{{
+          t('payments.new_address')
+        }}</VaButton>
       </div>
     </template>
   </div>
@@ -50,7 +52,7 @@ import AddressUpdateModal from './BillingAddressUpdateModal.vue'
 import { useBillingAddressesStore } from '../../../../stores/billing-addresses'
 import { BillingAddress } from '../../types'
 import { useColors } from 'vuestic-ui'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const store = useBillingAddressesStore()
 
@@ -62,7 +64,6 @@ const showCreate = ref<boolean>(false)
 const addressToEdit = ref<BillingAddress>()
 const { init } = useToast()
 const { t } = useI18n()
-
 
 store.load()
 const remove = async (card: BillingAddress) => {

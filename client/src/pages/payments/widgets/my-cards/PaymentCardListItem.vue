@@ -4,7 +4,7 @@
   >
     <div class="flex flex-col gap-2 flex-grow">
       <div class="flex items-center">
-        <div class="text-lg font-bold">{{ t("payments." + card.name) }}</div>
+        <div class="text-lg font-bold">{{ t('payments.' + card.name) }}</div>
         <VaBadge v-if="card.isPrimary" class="ml-2" color="danger" text="Primary" />
       </div>
       <div class="flex gap-4 items-center">
@@ -26,9 +26,8 @@
 import { computed } from 'vue'
 import PaymentSystem from '../../payment-system/PaymentSystem.vue'
 import { PaymentCard } from '../../types'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
-
 
 const emits = defineEmits(['edit', 'remove'])
 

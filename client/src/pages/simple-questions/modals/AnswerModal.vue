@@ -6,14 +6,14 @@
     model-value
     @update:modelValue="emits('cancel')"
   >
-    <VaTextarea v-html="marked.parse(props.answer)" :autosize="true" :readonly="true" style="width: 100%"></VaTextarea>
+    <VaTextarea :autosize="true" :readonly="true" style="width: 100%" v-html="marked.parse(props.answer)"></VaTextarea>
   </VaModal>
 </template>
 <script lang="ts" setup>
-import {marked} from "marked";
+import { marked } from 'marked'
 
 const props = defineProps({
-  answer: String
+  answer: String,
 })
 
 const emits = defineEmits(['cancel'])

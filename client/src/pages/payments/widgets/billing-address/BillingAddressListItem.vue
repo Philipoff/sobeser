@@ -23,7 +23,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { BillingAddress } from '../../types'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 const emits = defineEmits(['edit', 'remove'])
 

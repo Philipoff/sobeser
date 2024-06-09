@@ -14,7 +14,7 @@
 </template>
 <script lang="ts" setup>
 import { useNotificationsStore } from '../../../stores/notifications'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const { notifications } = useNotificationsStore()
 const { t } = useI18n()

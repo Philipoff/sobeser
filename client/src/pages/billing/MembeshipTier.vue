@@ -13,7 +13,7 @@
             </div>
             <div class="md:w-48">
               <template v-if="plan.priceMonth">
-                <p class="mb-1">{{ t('billing.' + plan.priceMonth)  + ' / ' + t('billing.month') }}</p>
+                <p class="mb-1">{{ t('billing.' + plan.priceMonth) + ' / ' + t('billing.month') }}</p>
                 <p>{{ t('billing.' + plan.priceYear) + ' / ' + t('billing.year') }}</p>
               </template>
               <p v-else>Free</p>
@@ -34,7 +34,7 @@
 <script lang="ts" setup>
 import { useToast } from 'vuestic-ui'
 import { reactive } from 'vue'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const { init } = useToast()
 const { t } = useI18n()
@@ -77,8 +77,8 @@ const plans = reactive<MembershipTier[]>([
     type: 'downgrade',
     padletsUsed: 0,
     padletsTotal: '3',
-    priceMonth: "price_month_enterprise",
-    priceYear: "price_year_enterprise",
+    priceMonth: 'price_month_enterprise',
+    priceYear: 'price_year_enterprise',
     uploadLimit: '20MB',
   },
 ])

@@ -36,22 +36,22 @@
           </article>
         </VaCollapse>
 
-      <VaCollapse :header="t('faq.questions.contact_q')">
-        <article class="max-w-3xl leading-5">
-          <p class="mb-2">
-            {{ t('faq.questions.contact_a') }}
-          </p>
-        </article>
-      </VaCollapse>
+        <VaCollapse :header="t('faq.questions.contact_q')">
+          <article class="max-w-3xl leading-5">
+            <p class="mb-2">
+              {{ t('faq.questions.contact_a') }}
+            </p>
+          </article>
+        </VaCollapse>
       </VaAccordion>
     </VaCardContent>
   </VaCard>
 </template>
 
 <script setup>
-import {reactive} from 'vue'
-import {useI18n} from "vue-i18n";
+import { reactive } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const accordionState = reactive([false, false, false, false])
-const {t} = useI18n()
+const { t } = useI18n()
 </script>

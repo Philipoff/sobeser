@@ -61,14 +61,12 @@
 
 <script lang="ts" setup>
 import { reactive } from 'vue'
-import { useRouter } from 'vue-router'
-import { useForm, useToast } from 'vuestic-ui'
+import { useForm } from 'vuestic-ui'
 
 const { validate } = useForm('form')
-const { init } = useToast()
 const { t } = useI18n()
 import axios from 'axios'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const formData = reactive({
   email: '',
@@ -87,18 +85,19 @@ const submit = () => {
         },
         {
           headers: {
-            "Accept": "application/json",
-            "Content-Type": "application/json",
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
           },
         },
       )
-      .then(response => {
+      .then((response) => {
         if (response.status === 201) {
-          window.location.href = '/faq';
+          window.location.href = '/faq'
         }
-      }).catch(error => {
-      alert(error.response.data.detail)
-    })
+      })
+      .catch((error) => {
+        alert(error.response.data.detail)
+      })
   }
 }
 

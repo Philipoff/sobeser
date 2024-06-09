@@ -19,7 +19,7 @@ import MembeshipTier from './MembeshipTier.vue'
 import PaymentInfo from './PaymentInfo.vue'
 import { usePaymentCardsStore } from '../../stores/payment-cards'
 import Invoices from './Invoices.vue'
-import {useI18n} from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 
 const cardStore = usePaymentCardsStore()
 const { t } = useI18n()

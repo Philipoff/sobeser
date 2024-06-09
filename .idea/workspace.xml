@@ -5,36 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9f1124-6f23-41b8-b781-3e7271d8242f" name="Changes" comment="Backend + RU locale">
-      <change afterPath="$PROJECT_DIR$/client/src/pages/simple-questions/modals/AnswerModal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sobeser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sobeser.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/routes/answer_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/routes/answer_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/navbar/components/AppNavbarActions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navbar/components/AppNavbarActions.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/navbar/components/dropdowns/ProfileDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/navbar/components/dropdowns/ProfileDropdown.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/i18n/locales/gb.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/locales/gb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/i18n/locales/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/locales/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/i18n/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/RecoverPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/RecoverPassword.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Signup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Signup.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/billing/BillingPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/billing/BillingPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/billing/Invoices.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/billing/Invoices.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/billing/MembeshipTier.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/billing/MembeshipTier.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/billing/PaymentInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/billing/PaymentInfo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/exam/ExamPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/exam/ExamPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/data/navigationLinks.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/data/navigationLinks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/FaqPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/FaqPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/widgets/Categories.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/widgets/Categories.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/faq/widgets/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/widgets/Navigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/faq/widgets/Questions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/faq/widgets/Questions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/PaymentsPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/PaymentsPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/billing-address/BillingAddressListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/payments/widgets/my-cards/PaymentCardListItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/Preferences.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/Preferences.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/modals/EditNameModal.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/modals/ResetPasswordModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/modals/ResetPasswordModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/preferences-header/PreferencesHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/preferences-header/PreferencesHeader.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/settings/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/settings/Settings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/pricing-plans/PricingPlans.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/pricing-plans/PricingPlans.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/pricing-plans/options.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/pricing-plans/options.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/settings/Settings.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/settings/Settings.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/settings/language-switcher/LanguageSwitcher.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/settings/language-switcher/LanguageSwitcher.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/settings/notifications/Notifications.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/settings/notifications/Notifications.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/settings/theme-switcher/ThemeSwitcher.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/settings/theme-switcher/ThemeSwitcher.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/simple-questions/SimpleQuestions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/simple-questions/SimpleQuestions.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/stores/notifications.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/notifications.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/stores/user-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/user-store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/simple-questions/modals/AnswerModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/simple-questions/modals/AnswerModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/global-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/global-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/payment-cards.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/payment-cards.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +58,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,7 +95,7 @@
       <recent name="C:\sobeser\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="npm.build">
     <configuration name="activate_this" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="sobeser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,28 +110,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Scripts/activate_this.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="chatgpt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="sobeser" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/services/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/services/utils/chatgpt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,6 +162,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/client/package.json" />
       <command value="run" />
@@ -198,16 +194,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.build" />
       <item itemvalue="npm.prepare" />
       <item itemvalue="npm.dev (1)" />
-      <item itemvalue="Python.activate_this" />
-      <item itemvalue="Python.chatgpt" />
-      <item itemvalue="Python.jwt_processing" />
-      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.prepare" />
       </list>
@@ -297,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715794926347</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Backend + RU locale">
+      <created>1717971071865</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717971071865</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,8 +320,5 @@
     <MESSAGE value="RU locale" />
     <MESSAGE value="Backend + RU locale" />
     <option name="LAST_COMMIT_MESSAGE" value="Backend + RU locale" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sobeser$main.coverage" NAME="main Coverage Results" MODIFIED="1717949582899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>
