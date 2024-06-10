@@ -21,6 +21,6 @@ import {ref} from 'vue'
 import {useI18n} from 'vue-i18n'
 
 const {t} = useI18n()
-const isEditNameModalOpen = ref(false)
-const clicked_question = ''
+let isEditNameModalOpen = ref(false)
+let clicked_question = ''
 </script>

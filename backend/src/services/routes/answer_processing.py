@@ -1,9 +1,8 @@
 from fastapi import APIRouter
 from random import random
-from backend.services.utils.gemini import gemini_search
-from backend.services.utils.chatgpt import chatgpt_35_turbo_QA
-from backend.services.schemas.answer_processing import QAModel
-from time import sleep
+from ...services.utils.gemini import gemini_search
+from ...services.utils.chatgpt import chatgpt_35_turbo_QA
+from ...services.schemas.answer_processing import QAModel
 
 QA_router = APIRouter(
     tags=["QA"],

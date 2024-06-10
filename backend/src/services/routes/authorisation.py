@@ -1,8 +1,8 @@
 from fastapi import APIRouter, status, Request, HTTPException
 
-from backend.services.schemas.auth import RestCredentials
-from backend.services.jwt_processing import Auth
-from backend.database.database import DatabaseService
+from ...services.schemas.auth import RestCredentials
+from ...services.jwt_processing import Auth
+from ...database.database import DatabaseService
 
 auth_router = APIRouter(
     tags=["auth"],

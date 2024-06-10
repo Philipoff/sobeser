@@ -85,7 +85,7 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('../pages/auth/RecoverPassword.vue'),
       },
       {
-        path: '',
+        path: '/',
         redirect: { name: 'login' },
       },
     ],

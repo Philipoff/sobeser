@@ -1,5 +1,5 @@
-from services.service import APIService
-from database.database import DatabaseService
+from src.services.service import APIService
+from src.database.database import DatabaseService
 
 import uvicorn
 

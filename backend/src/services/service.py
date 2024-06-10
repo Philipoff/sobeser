@@ -1,9 +1,9 @@
 from fastapi import APIRouter, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.services.routes.authorisation import auth_router
-from backend.services.routes.answer_processing import QA_router
-from backend.database.database import DatabaseService
+from .routes.authorisation import auth_router
+from .routes.answer_processing import QA_router
+from ..database.database import DatabaseService
 
 
 class APIService:
