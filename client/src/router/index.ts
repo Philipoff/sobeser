@@ -84,11 +84,12 @@ const routes: Array<RouteRecordRaw> = [
         path: 'recover-password',
         component: () => import('../pages/auth/RecoverPassword.vue'),
       },
-      {
-        path: '/',
-        redirect: { name: 'login' },
-      },
     ],
+  },
+
+  {
+    path: '',
+    redirect: "/auth/login",
   },
 ]
 

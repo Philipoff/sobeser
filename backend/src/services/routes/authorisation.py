@@ -30,11 +30,12 @@ async def login(request: Request, data: RestCredentials):
 
 @auth_router.post(
     path="/register",
-    status_code=status.HTTP_201_CREATED,
+    status_code=status.HTTP_200_OK,
     responses={400: {}, 401: {}, 403: {}},
 )
 async def register(request: Request, data: RestCredentials):
     database: DatabaseService = request.app.state.database
+    auth = Auth()
     user = await database.get_user(email=data.email)
 
     if user is not None:
@@ -48,4 +49,7 @@ async def register(request: Request, data: RestCredentials):
         password=data.password,
     )
 
-    return status.HTTP_201_CREATED
+    access_token = auth.create_token(data.email)
+    refresh_token = auth.create_refresh_token(data.email)
+
+    return {"access_token": access_token, "refresh_token": refresh_token}

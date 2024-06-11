@@ -78,7 +78,7 @@ const submit = () => {
   if (validate()) {
     axios
       .post(
-        '/api/auth/register',
+        "/api/auth/register",
         {
           email: String(formData.email),
           password: String(formData.password),
@@ -91,8 +91,11 @@ const submit = () => {
         },
       )
       .then((response) => {
-        if (response.status === 201) {
-          window.location.href = '/faq'
+        if (response.status === 200) {
+          localStorage.setItem('email', formData.email)
+          localStorage.setItem('access_token', response.data.access_token)
+          localStorage.setItem('refresh_token', response.data.refresh_token)
+          window.location.href = '/preferences'
         }
       })
       .catch((error) => {

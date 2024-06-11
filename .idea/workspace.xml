@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9f1124-6f23-41b8-b781-3e7271d8242f" name="Changes" comment="MVP">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sobeser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sobeser.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/database/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/jwt_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/jwt_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/routes/answer_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/routes/answer_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/routes/authorisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/routes/authorisation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/schemas/answer_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/schemas/answer_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/schemas/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/schemas/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/utils/chatgpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/utils/chatgpt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/utils/gemini.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/utils/gemini.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/simple-questions/SimpleQuestions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/simple-questions/SimpleQuestions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/services/routes/authorisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/routes/authorisation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/i18n/locales/gb.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/locales/gb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/i18n/locales/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/i18n/locales/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/auth/Signup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/auth/Signup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/settings/notifications/Notifications.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/settings/notifications/Notifications.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +157,8 @@
       <item itemvalue="npm.build:ci" />
       <item itemvalue="npm.prepare" />
       <item itemvalue="npm.dev (1)" />
+      <item itemvalue="Python.activate_this" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
@@ -204,6 +196,7 @@
       <workItem from="1717686589517" duration="1420000" />
       <workItem from="1717702899575" duration="5747000" />
       <workItem from="1717844029689" duration="25966000" />
+      <workItem from="1718104011817" duration="1820000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1715203608830</created>
@@ -275,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717971177362</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="MVP">
+      <created>1718046287457</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718046287457</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,5 +299,8 @@
     <MESSAGE value="Backend + RU locale" />
     <MESSAGE value="MVP" />
     <option name="LAST_COMMIT_MESSAGE" value="MVP" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sobeser$main.coverage" NAME="main Coverage Results" MODIFIED="1718105395231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>

@@ -331,6 +331,7 @@
     "manage_button": "Notification settings",
 
     "notifications": {
+      "Notifications you receive": "Notifications you receive",
       "Searching for a job": "Searching for a job",
       "Hiring someone": "Hiring someone",
       "Connecting with others": "Connecting with others",
