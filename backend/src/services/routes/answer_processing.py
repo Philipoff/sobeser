@@ -1,7 +1,6 @@
+import openai
 from fastapi import APIRouter
-from random import random
-from ...services.utils.gemini import gemini_search
-from ...services.utils.chatgpt import chatgpt_35_turbo_QA
+from ...services.utils.generate_answer import generate_answer
 from ...services.schemas.answer_processing import QAModel
 
 QA_router = APIRouter(
@@ -17,19 +16,14 @@ QA_router = APIRouter(
 
 @QA_router.post("/check_answer")
 async def check_answer(form: QAModel):
-    try:
-        if random() <= 0.5:
-            answer = gemini_search(form.question, form.answer)
-        else:
-            if len(form.question + form.answer) > 400:
-                answer = chatgpt_35_turbo_QA(form.question, form.answer, "16k")
-            else:
-                answer = chatgpt_35_turbo_QA(form.question, form.answer, "4k")
-    except Exception as e:
-        print(e)
-        answer = "Technical error. Try again"
+    answer = None
+    while not answer:
+        try:
+            answer = generate_answer(form.question, form.answer)["answer"]
+        except openai.APIConnectionError:
+            pass
     return answer
 
 
 if __name__ == "__main__":
-    print(gemini_search("How to create a list in Python?", "list = [1, 2, 3]"))
+    print(generate_answer("How to create a list in Python?", "list = [1, 2, 3]"))

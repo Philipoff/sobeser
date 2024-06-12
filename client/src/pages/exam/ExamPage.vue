@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 style="font-size: 1.5rem" class="leading-8">{{ t('exam.Question') }}: {{ requestData.question }}</h2>
+    <h2 style="font-size: 1.5rem" class="leading-8">{{ t('exam.Question') }}: <VaTextarea v-html="marked(requestData.question)"></VaTextarea></h2>
   </div>
   <br />
   <h2>{{ t('exam.Answer') }}:</h2>
