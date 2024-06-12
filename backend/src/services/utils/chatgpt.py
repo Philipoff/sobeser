@@ -37,7 +37,7 @@ def chatgpt_35_turbo_QA(question, answer, model):
             print(traceback.format_exc())
             print(counter, "ChatGPT", e)
             print(API_KEY)
-
+    print(completion)
     return completion.choices[0].message.content
 
 

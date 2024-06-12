@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9f1124-6f23-41b8-b781-3e7271d8242f" name="Changes" comment="MVP">
-      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/services/routes/profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/services/schemas/profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/services/utils/generate_answer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/services/routes/answer_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/routes/answer_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/services/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/services/utils/chatgpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/utils/chatgpt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/services/utils/gemini.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/utils/gemini.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/exam/ExamPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/exam/ExamPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/Preferences.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/Preferences.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/preferences/preferences-header/PreferencesHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/preferences/preferences-header/PreferencesHeader.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +61,7 @@
       <recent name="C:\sobeser\public" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="Python.main">
     <configuration name="activate_this" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="sobeser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,6 +157,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.build:ci" />
         <item itemvalue="npm.dev (1)" />
@@ -287,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718124630886</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="MVP">
+      <created>1718156944903</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718156944903</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,5 +309,8 @@
     <MESSAGE value="Backend + RU locale" />
     <MESSAGE value="MVP" />
     <option name="LAST_COMMIT_MESSAGE" value="MVP" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sobeser$main.coverage" NAME="main Coverage Results" MODIFIED="1718157228744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>
