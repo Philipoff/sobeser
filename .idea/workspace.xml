@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ab9f1124-6f23-41b8-b781-3e7271d8242f" name="Changes" comment="MVP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/services/utils/chatgpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/utils/chatgpt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/services/utils/gemini.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/utils/gemini.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
       <recent name="C:\sobeser\public" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.chatgpt">
     <configuration name="activate_this" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="sobeser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,7 +86,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="chatgpt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sobeser" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,12 +94,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/src/services/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/src/services/utils/chatgpt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gemini" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sobeser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/src/services/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/src/services/utils/gemini.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,31 +161,21 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="prepare" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/client/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="prepare" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="npm.build" />
       <item itemvalue="npm.build:ci" />
-      <item itemvalue="npm.prepare" />
       <item itemvalue="npm.dev (1)" />
       <item itemvalue="Python.activate_this" />
-      <item itemvalue="Python.main" />
+      <item itemvalue="Python.chatgpt" />
+      <item itemvalue="Python.gemini" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.chatgpt" />
+        <item itemvalue="Python.gemini" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.build:ci" />
         <item itemvalue="npm.dev (1)" />
-        <item itemvalue="npm.prepare" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +207,7 @@
       <workItem from="1717702899575" duration="5747000" />
       <workItem from="1717844029689" duration="25966000" />
       <workItem from="1718104011817" duration="1820000" />
+      <workItem from="1718192975939" duration="4152000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1715203608830</created>
@@ -285,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718156944903</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="MVP">
+      <created>1718157445027</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1718157445027</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +333,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="MVP" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sobeser$chatgpt.coverage" NAME="chatgpt Coverage Results" MODIFIED="1718197255450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/src/services/utils" />
     <SUITE FILE_PATH="coverage/sobeser$main.coverage" NAME="main Coverage Results" MODIFIED="1718157228744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/sobeser$gemini.coverage" NAME="gemini Coverage Results" MODIFIED="1718194229521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/src/services/utils" />
   </component>
 </project>

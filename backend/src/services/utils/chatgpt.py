@@ -5,8 +5,10 @@ from openai import OpenAI, APIConnectionError
 from httpx import Client
 from fp.fp import FreeProxy
 from dotenv import dotenv_values
+
 API_KEY = dotenv_values()["OPENAI_API_KEY"]
-proxy = FreeProxy().get()
+proxy = FreeProxy(https=True).get()
+print(proxy)
 client = OpenAI(api_key=API_KEY, http_client=Client(proxy=proxy))
 
 
@@ -50,4 +52,4 @@ if __name__ == "__main__":
     print("----------------------------")
     print("----------------------------")
     print("----------------------------")
-    print(chatgpt_35_turbo_QA(question, answer, model='16k'))
+    # print(chatgpt_35_turbo_QA(question, answer, model='16k'))

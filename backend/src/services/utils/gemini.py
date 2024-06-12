@@ -1,12 +1,12 @@
 import requests
 from fp.fp import FreeProxy
-import ssl
 from dotenv import dotenv_values
 import traceback
 
 API_KEY = dotenv_values()["GEMINI_API_KEY"]
 
-proxy = FreeProxy().get()
+proxy = FreeProxy(https=True).get()
+print(proxy)
 proxies = {
     "http": proxy,
     "https": proxy,
@@ -14,8 +14,7 @@ proxies = {
 
 
 def gemini_search(question, answer, temperature=0.1):
-    # ssl._create_default_https_context = ssl._create_unverified_context
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro-latest:generateContent?key={API_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.0-pro-latest:generateContent?key={API_KEY}"
     prompt = f"""Question: {question} Answer: {answer} \n Found mistakes:"""
 
     request_body = {
@@ -41,7 +40,7 @@ def gemini_search(question, answer, temperature=0.1):
     while counter <= 10 and not response:
         counter += 1
         try:
-            response = requests.post(url, json=request_body, proxies=proxies)
+            response = requests.post(url, json=request_body, proxies=proxies, verify=False)
             if response.status_code == 200:
                 return response.json().get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text")
         except requests.exceptions.SSLError or requests.exceptions.ConnectionError as e:
