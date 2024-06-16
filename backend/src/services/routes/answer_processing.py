@@ -15,11 +15,12 @@ QA_router = APIRouter(
 
 
 @QA_router.post("/check_answer")
-async def check_answer(form: QAModel):
+def check_answer(form: QAModel):
     answer = None
     while not answer:
         try:
-            answer = generate_answer(form.question, form.answer)["answer"]
+            response = generate_answer(form.question, form.answer)
+            answer = response["answer"]
         except openai.APIConnectionError:
             pass
     return answer
