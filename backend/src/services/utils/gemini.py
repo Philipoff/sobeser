@@ -2,6 +2,8 @@ import requests
 from fp.fp import FreeProxy
 from dotenv import dotenv_values
 import traceback
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 API_KEY = dotenv_values()["GEMINI_API_KEY"]
 
@@ -14,7 +16,7 @@ proxies = {
 
 
 def gemini_search(question, answer, temperature=0.1):
-    url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.0-pro-latest:generateContent?key={API_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={API_KEY}"
     prompt = f"""Question: {question} Answer: {answer} \n Found mistakes:"""
 
     request_body = {
@@ -41,6 +43,7 @@ def gemini_search(question, answer, temperature=0.1):
         counter += 1
         try:
             response = requests.post(url, json=request_body, proxies=proxies, verify=False)
+            print(response)
             if response.status_code == 200:
                 return response.json().get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text")
         except requests.exceptions.SSLError or requests.exceptions.ConnectionError as e:
